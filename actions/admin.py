@@ -1,3 +1,4 @@
+from actions.models import Action
 from django.contrib import admin
 
-# Register your models here.
+admin.site.register(Action)

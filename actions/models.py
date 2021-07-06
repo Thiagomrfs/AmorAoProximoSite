@@ -1,3 +1,17 @@
 from django.db import models
 
-# Create your models here.
+class Action(models.Model):
+    categories = [
+        ('ESP', 'Esporte'),
+        ('CLT', 'Cultura'),
+        ('CNM', 'Comida na mesa')
+    ]
+
+    name = models.CharField(max_length=50)
+    category = models.CharField(max_length=3, choices=categories, default='CLT')
+    start_date = models.DateField()
+    end_date = models.DateField()
+    responsible = models.CharField(max_length=50)
+    description = models.TextField()
+    prerequisites = models.CharField(max_length=500)
+    
