@@ -3,7 +3,22 @@
 
 {% block styles %}
     <link rel="stylesheet" href="{% static 'css/actions/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/actions/sections.css' %}">
+    <link rel="stylesheet" href="{% static 'css/actions/header.css' %}">
 {% endblock styles %}
+
+
+{% block header %}
+    <img src="{% static 'images/solidarity.png' %}" alt="logo amor ao próximo" class="logo">
+    <nav>
+        <ul class="nav-items">
+            <li><a href="#">Ações</a></li>
+            <li><a href="#">Notícias</a></li>
+            <li><a href="#">Voluntariar-se</a></li>
+            <li><a href="#">Doar</a></li>
+        </ul>
+    </nav>
+{% endblock header %}
 
 {% block content %}
     <div class="container">

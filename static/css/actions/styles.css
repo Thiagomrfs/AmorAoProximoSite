@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 * {
     font-family: sans-serif;
     margin: 0;
@@ -5,33 +7,14 @@
     box-sizing: border-box;
 }
 
-.container {
-    height: 100vh;
-    scroll-snap-type: y mandatory;
-    overflow-y: auto;
+body {
+    overflow-y: overlay;
 }
 
-section {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    scroll-snap-align: start;
-}
-
-.one {
-    background-color: rgb(36, 164, 138);
-}
-
-.two {
-    background-color: rgb(211, 79, 79);
-}
-
-.three {
-    background-color: rgb(67, 91, 175);
-}
-
-.four {
-    background-color: salmon;
+li, a, button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #edf0f1;
+    text-decoration: none;
 }

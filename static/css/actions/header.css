@@ -1,0 +1,31 @@
+header {
+    background-color: #0D0D0D;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.6rem 10%;
+    position: fixed;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.nav-items {
+    list-style: none;
+}
+
+.nav-items li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-items li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-items li a:hover {
+    color: #0088a9;
+}

@@ -1,0 +1,23 @@
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.one {
+    background-color: rgb(36, 164, 138);
+}
+
+.two {
+    background-color: rgb(211, 79, 79);
+}
+
+.three {
+    background-color: rgb(67, 91, 175);
+}
+
+.four {
+    background-color: salmon;
+}
