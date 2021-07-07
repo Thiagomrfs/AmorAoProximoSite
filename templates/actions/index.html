@@ -1,7 +1,23 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/actions/styles.css' %}">
+{% endblock styles %}
 
 {% block content %}
-    {% for action in actions %}
-    <p>{{action.name}}</p>
-    {% endfor %}
+    <div class="container">
+        <section class="one">
+            <h1>First Page</h1>
+        </section>
+        <section class="two">
+            <h1>Second Page</h1>
+        </section>
+        <section class="three">
+            <h1>Third Page</h1>
+        </section>
+        <section class="four">
+            <h1>Last Page</h1>
+        </section>
+    </div>
 {% endblock content %}
