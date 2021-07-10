@@ -2,37 +2,33 @@
 {% load static %}
 
 {% block styles %}
-    <link rel="stylesheet" href="{% static 'css/actions/styles.css' %}">
     <link rel="stylesheet" href="{% static 'css/actions/sections.css' %}">
-    <link rel="stylesheet" href="{% static 'css/actions/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/actions/sports.css' %}">
 {% endblock styles %}
-
-
-{% block header %}
-    <img src="{% static 'images/solidarity.png' %}" alt="logo amor ao próximo" class="logo">
-    <nav>
-        <ul class="nav-items">
-            <li><a href="#">Ações</a></li>
-            <li><a href="#">Notícias</a></li>
-            <li><a href="#">Voluntariar-se</a></li>
-            <li><a href="#">Doar</a></li>
-        </ul>
-    </nav>
-{% endblock header %}
 
 {% block content %}
     <div class="container">
-        <section class="one">
-            <h1>First Page</h1>
+        <section class="categories">
+            <h1>Categorias</h1>
         </section>
-        <section class="two">
-            <h1>Second Page</h1>
+        <section class="sports">
+            <h1 class="section-title">Esportes</h1>
+            <div class="cards-container">
+                <div class="card">
+                    <h3 class="title">
+                        Oficina de capoeira
+                    </h3>
+                    <div class="details">
+                        <p>Aprenda a jogar capoeira com thiaguinho malamansa</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="three">
-            <h1>Third Page</h1>
+        <section class="culture">
+            <h1>Cultura</h1>
         </section>
-        <section class="four">
-            <h1>Last Page</h1>
+        <section class="food">
+            <h1>Comida na mesa</h1>
         </section>
     </div>
 {% endblock content %}
