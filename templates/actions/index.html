@@ -14,14 +14,21 @@
         <section class="sports">
             <h1 class="section-title">Esportes</h1>
             <div class="cards-container">
-                <div class="card">
-                    <h3 class="title">
-                        Oficina de capoeira
-                    </h3>
-                    <div class="details">
-                        <p>Aprenda a jogar capoeira com thiaguinho malamansa</p>
-                    </div>
-                </div>
+                <ul id="autoWidth" class="cs-hidden">
+                    {% for action in actions %}
+                    <li>
+                        <div class="card">
+                            <h3 class="title">
+                                Oficina de capoeira
+                            </h3>
+                            <div class="details">
+                                <p>Aprenda a jogar capoeira com thiaguinho malamansa</p>
+                            </div>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+                
             </div>
         </section>
         <section class="culture">
@@ -32,3 +39,6 @@
         </section>
     </div>
 {% endblock content %}
+
+{% block scripts %}
+{% endblock scripts %}

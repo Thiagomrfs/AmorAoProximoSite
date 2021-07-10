@@ -10,10 +10,10 @@
 
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
-    <link type="text/css" rel="stylesheet" href="css/extern/lightslider.css" />
+    <link type="text/css" rel="stylesheet" href="{% static 'css/extern/lightslider.css' %}" />
     <!-- JQuery -->
-    <script type="text/javascript" src="js/extern/JQuery3.3.1.js"></script>
-    <script type="text/javascript" src="js/extern/lightslider.js"></script>
+    <script type="text/javascript" src="{% static 'js/extern/JQuery3.3.1.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/extern/lightslider.js' %}"></script>
 
     {% block styles %}
     {% endblock styles %}
@@ -21,7 +21,7 @@
 
 <body>
     <header>
-        <img src="{% static 'images/Simbolo_logo_Amor_ao_Proximo.svg' %}" 
+        <img src="{% static 'img/Simbolo_logo_Amor_ao_Proximo.svg' %}" 
         alt="logo amor ao próximo" class="logo"
         width="32" height="32">
         <nav>
@@ -45,7 +45,7 @@
 
     {% block scripts %}
     {% endblock scripts %}
-    <script src="js/extern/lightslider.js"></script>
+    <script type="text/javascript" src="{% static 'js/cardSlider.js' %}"></script>
 </body>
 
 

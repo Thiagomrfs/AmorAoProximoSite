@@ -2,7 +2,7 @@
     'use strict';
     var defaults = {
         item: 3,
-        autoWidth: false,
+        autoWidth: true,
         slideMove: 1,
         slideMargin: 10,
         addClass: '',
