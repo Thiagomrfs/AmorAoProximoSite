@@ -48,7 +48,7 @@
     position: absolute !important;
     top: 0;
     left: 0;
-    z-index: 9;
+    z-index: 1;
     margin-right: 0;
     width: 100%;
 }
@@ -64,7 +64,7 @@
     transition-timing-function: inherit !important;
 }
 .lSSlideWrapper .lSFade > *.active {
-    z-index: 10;
+    z-index: 1;
 }
 .lSSlideWrapper.usingCss .lSFade > *.active {
     opacity: 1;
@@ -91,7 +91,7 @@
     text-indent: -999em;
     width: 8px;
     position: relative;
-    z-index: 99;
+    z-index: 1;
     -webkit-transition: all 0.5s linear 0s;
     transition: all 0.5s linear 0s;
 }
@@ -157,7 +157,7 @@
     background-image: url('../../img/controls.png');
     cursor: pointer;
     position: absolute;
-    z-index: 99;
+    z-index: 1;
     margin-top: -16px;
     opacity: 0.5;
     -webkit-transition: opacity 0.35s linear 0s;
