@@ -3,39 +3,110 @@
 
 {% block styles %}
     <link rel="stylesheet" href="{% static 'css/actions/sections.css' %}">
+    <link rel="stylesheet" href="{% static 'css/cards.css' %}">
+    <link rel="stylesheet" href="{% static 'css/actions/categories.css' %}">
     <link rel="stylesheet" href="{% static 'css/actions/sports.css' %}">
+    <link rel="stylesheet" href="{% static 'css/actions/culture.css' %}">
+    <link rel="stylesheet" href="{% static 'css/actions/food.css' %}">
 {% endblock styles %}
 
 {% block content %}
     <div class="container">
         <section class="categories">
-            <h1>Categorias</h1>
+            <h1 class="section-title">Categorias</h1>
+            <div class="cards-container">
+                <ul class="cs-hidden autoWidth">
+                    <li> 
+                        <a href="#esportes">
+                            <div class="card">
+                                <h3 class="title">
+                                    Esporte
+                                </h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#cultura">
+                            <div class="card">
+                                <h3 class="title">
+                                    Cultura
+                                </h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#comida-na-mesa">
+                            <div class="card">
+                                <h3 class="title">
+                                    Comida na mesa
+                                </h3>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
         </section>
-        <section class="sports">
+        <section class="sports" id="esportes">
             <h1 class="section-title">Esportes</h1>
             <div class="cards-container">
-                <ul id="autoWidth" class="cs-hidden">
-                    {% for action in actions %}
-                    <li>
-                        <div class="card">
-                            <h3 class="title">
-                                {{ action.name }}
-                            </h3>
-                            <div class="details">
-                                <p>{{ action.description }}</p>
-                            </div>
-                        </div>
-                    </li>
+                <ul class="cs-hidden autoWidth">
+                    {% for action in actions %} 
+                        {% if action.category == "ESP" %}
+                            <li>
+                                <div class="card">
+                                    <h3 class="title">
+                                        {{ action.name }}
+                                    </h3>
+                                    <div class="details">
+                                        <p>{{ action.description }}</p>
+                                    </div>
+                                </div>
+                            </li>
+                        {% endif %}
                     {% endfor %}
                 </ul>
-                
             </div>
         </section>
-        <section class="culture">
-            <h1>Cultura</h1>
+        <section class="culture" id="cultura">
+            <h1 class="section-title">Cultura</h1>
+            <div class="cards-container">
+                <ul class="cs-hidden autoWidth">
+                    {% for action in actions %} 
+                        {% if action.category == "CLT" %}
+                            <li>
+                                <div class="card">
+                                    <h3 class="title">
+                                        {{ action.name }}
+                                    </h3>
+                                    <div class="details">
+                                        <p>{{ action.description }}</p>
+                                    </div>
+                                </div>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
         </section>
-        <section class="food">
-            <h1>Comida na mesa</h1>
+        <section class="food" id="comida-na-mesa">
+            <h1 class="section-title">Comida na mesa</h1>
+            <div class="cards-container">
+                <ul class="cs-hidden autoWidth">
+                    {% for action in actions %} 
+                        {% if action.category == "CNM" %}
+                            <li>
+                                <div class="card">
+                                    <h3 class="title">
+                                        {{ action.name }}
+                                    </h3>
+                                    <div class="details">
+                                        <p>{{ action.description }}</p>
+                                    </div>
+                                </div>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
         </section>
     </div>
 {% endblock content %}
