@@ -11,3 +11,14 @@ $('.autoWidth').lightSlider({
     } 
 });  
 });
+
+$(document).ready(function() {
+    $('.categoriesSlider').lightSlider({
+        autoWidth:true,
+        loop:true,
+        pager: false,
+        onSliderLoad: function() {
+            $('.categoriesSlider').removeClass('cS-hidden');
+        } 
+    });  
+    });
