@@ -24,6 +24,10 @@
     padding: 2rem 1rem;
 }
 
+.title {
+    text-align: center;
+}
+
 .details {
     display: flex;
     flex-direction: column;
