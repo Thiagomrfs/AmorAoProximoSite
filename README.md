@@ -4,3 +4,4 @@ Uma aplicação web desenvolvida para a instituição Amor ao Próximo durante a
 ### Equipe
 - Caio Vinicius
 - Thiago Marinho
+- João Lucas
