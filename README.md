@@ -5,3 +5,4 @@ Uma aplicação web desenvolvida para a instituição Amor ao Próximo durante a
 - Caio Vinicius
 - Thiago Marinho
 - João Lucas
+- Júlio César Luz
