@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/main/sections.css' %}">
+{% endblock styles %}
+
+{% block content %}
+    <div class="container">
+        <section id="landing">
+            <div class="landing-content">
+                <div class="landing-content-items">
+                    <h3>
+                        “Somos porta voz de quem nunca foi ouvido!”
+                    </h3>
+                    <a href="#donations" class="call-to-donation">
+                        Ajude ao próximo
+                    </a>
+                </div>
+            </div>
+            <img src="{% static 'img/landing.png' %}" alt="duas crianças sorrindo">
+        </section>
+        <section id="history">
+
+        </section>
+        <section id="donations">
+
+        </section>
+        <section id="actions">
+
+        </section>
+        <section id="updates">
+
+        </section>
+        <section id="volunteer">
+
+        </section>
+    </div>
+{% endblock content %}
+
+{% block scripts %}
+{% endblock scripts %}

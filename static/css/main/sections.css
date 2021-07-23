@@ -1,0 +1,87 @@
+#landing {
+    background-color: var(--background-one);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+#landing .landing-content {
+    display: flex;
+    width: 45%;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+#landing img {
+    justify-content: flex-end;
+    align-items: flex-end;
+    max-width: 85%;
+    height: 85%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#landing .landing-content-items h3 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    line-height: 3rem;
+    font-style: normal;
+}
+
+#landing .landing-content-items a {
+    width: 15rem;
+    height: 3.5rem;
+    background: var(--secondary);
+    border-radius: 2.62rem;
+    margin-left: 50%;
+    box-shadow: -4px 5px 4px rgba(0, 0, 0, 0.25);
+
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    transition: 500ms;
+}
+
+#landing .landing-content-items a:hover {
+    cursor: pointer;
+    background-color: var(--secondary-hover);
+}
+
+#landing .call-to-donation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#history {
+    background-color: var(--background-two);
+    width: 100vw;
+    height: 100vh;
+}
+
+#donations {
+    background-color: var(--background-one);
+    width: 100vw;
+    height: 100vh;
+}
+
+#actions {
+    background-color: var(--background-two);
+    width: 100vw;
+    height: 100vh;
+}
+
+#updates {
+    background-color: var(--background-one);
+    width: 100vw;
+    height: 100vh;
+}
+
+#volunteer {
+    background-color: var(--background-two);
+    width: 100vw;
+    height: 100vh;
+}

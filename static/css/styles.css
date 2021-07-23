@@ -2,8 +2,15 @@
 
 :root {
     --app-white: #edf0f1;
-    --background-gray: #EEDDDD;
-    --app-black: #121317;
+    --app-black: #272422;
+
+    --background-one: #F2E6D8;
+    --background-two: #FFF5D9;
+
+    --primary: #2EAD95;
+    --secondary: #E83E32;
+    --secondary-hover: #BF3329;
+    --text-black: #333333;
 }
 
 * {
@@ -20,7 +27,6 @@ body {
 }
 
 li, a, button {
-    
     font-size: 1rem;
     color: var(--app-white);
     text-decoration: none;
