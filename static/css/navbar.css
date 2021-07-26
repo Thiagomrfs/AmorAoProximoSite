@@ -36,7 +36,7 @@ header {
 }
 
 .nav-items li a:hover {
-    color: #0088a9;
+    color: var(--secondary-hover);
 }
 
 #nav-doe {

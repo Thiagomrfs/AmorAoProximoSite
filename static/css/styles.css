@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 :root {
+    --title-left-margin: 4rem;
+
     --app-white: #edf0f1;
     --app-black: #272422;
 
@@ -30,4 +32,21 @@ li, a, button {
     font-size: 1rem;
     color: var(--app-white);
     text-decoration: none;
+}
+
+footer {
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+    transform: translateY(-45%);
+    display: flex;
+}
+
+footer img {
+    align-self: flex-end;
+    justify-self: flex-end;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
 }
