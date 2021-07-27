@@ -22,9 +22,11 @@
 
 <body>
     <header id="nav">
-        <img src="{% static 'img/Logo.svg' %}" 
-        alt="logo amor ao próximo" class="logo"
-        width="82" height="64">
+        <div class="logo-container">
+            <img src="{% static 'img/Logo.svg' %}" 
+            alt="logo amor ao próximo" class="logo"
+            width="82" height="64">
+        </div>
         <nav>
             <ul class="nav-items">
                 <li><a href="#history">História</a></li>
@@ -34,7 +36,7 @@
             </ul>
         </nav>
         <a href="#donations" id="nav-doe">
-            doar
+            Doar!
         </a>
     </header>
 
@@ -44,7 +46,7 @@
     </main>
 
     <footer>
-
+        <img src="{% static 'img/footer-background.svg' %}" alt="plano de fundo do footer">
     </footer>
 
     {% block scripts %}
