@@ -1,0 +1,30 @@
+.modal {
+    display: none;              /* Hidden */
+    position: fixed;            /* Positioning */
+    padding-top: 100px;         /* Padding */
+    top: 0;                     /* Cover Top */
+    width: 100%;                /* Cover all page */
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* Reduce page brigthness */
+    }
+
+.modal-content {
+    background-color: #ffffff;  /* Modal background */
+    margin: auto;           /* Margin */
+    padding: 20px;          /* Padding */
+    border: 1px solid #888; /* Fade in border */
+    width: 50%;             /* Modal Width */
+    }
+
+.close-modal {    /* Close X */
+    color: #aaaaaa;        
+    float: right;
+    font-size: 42px;
+    }
+
+.close-modal:hover,
+.close-modal:focus {   /* Highligth the X */
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    }
