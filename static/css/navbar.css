@@ -19,8 +19,8 @@ nav {
     padding-left: 18vw;
 }
 
-.logo-container {
-    background: var(--background-one);
+#logo-container {
+    background: transparent;
     width: 6rem;
     height: 100%;
     position: absolute;
