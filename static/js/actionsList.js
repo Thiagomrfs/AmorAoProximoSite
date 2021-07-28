@@ -18,7 +18,7 @@ categories.map((c) => {
     c.addEventListener('click', function(event){
         clearCategorySelection();
         event.currentTarget.classList.add("selected");
-        changeActionsVisibility(event.currentTarget.firstElementChild.innerText);
+        changeActionsVisibility(event.currentTarget.lastElementChild.innerText);
     });
 })
 

@@ -18,12 +18,12 @@
 .card {
     width: 10rem;
     height: 12.5rem;
-    background-color: red;
+    background-color: var(--primary);
 }
 
-#actions .cards-container .card h3 {
-    color: royalblue;
+#actions .cards-container .card h4 {
     line-height: normal;
     font-size: 1rem;
+    font-weight: 600;
 }
 
