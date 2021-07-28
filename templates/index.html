@@ -3,6 +3,7 @@
 
 {% block styles %}
 <link rel="stylesheet" href="{% static 'css/main/sections.css' %}">
+<link rel="stylesheet" href="{% static 'css/actionCard.css' %}">
 {% endblock styles %}
 
 {% block content %}
@@ -47,10 +48,72 @@
             </div>
         </section>
         <section id="donations">
-            <h1>Infográfico é muito brabo</h1>
+
         </section>
         <section id="actions">
-            
+            <h3>Ações</h3>
+            <div class="actions-main-container">
+                <div class="categories-container">
+                    <div class="category-card">
+                        <p>Educação</p>
+                    </div>
+                    <div class="category-card">
+                        <p>Cultura</p>
+                    </div>
+                    <div class="category-card">
+                        <p>Esporte</p>
+                    </div>
+                    <div class="category-card">
+                        <p>Comida na mesa</p>
+                    </div>
+                </div>
+                <div class="actions-container">
+                    <div id="education-actions">
+                        <div class="cards-container">
+                            <ul id="lightSlider1">
+                                {% for action in education %}
+                                    <div class="card">
+                                        abc
+                                    </div>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="culture-actions">
+                        <div class="cards-container">
+                            <ul id="lightSlider2">
+                                {% for action in culture %}
+                                    <div class="card">
+                                        def
+                                    </div>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="sports-actions">
+                        <div class="cards-container">
+                            <ul id="lightSlider3">
+                                {% for action in culture %}
+                                    <div class="card">
+                                        ghi
+                                    </div>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="food-actions">
+                        <div class="cards-container">
+                            <ul id="lightSlider4">
+                                {% for action in culture %}
+                                    <div class="card">
+                                        jkl
+                                    </div>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="updates">
 

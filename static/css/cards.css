@@ -4,28 +4,28 @@
 
 .cards-container {
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .card {
-    color: var(--app-black);
-    width: 15rem;
-    height: 20rem;
-    border-radius: 2rem;
-    background-color: var(--background-gray);
-    box-shadow: 0.1rem 0.8rem 0.9rem rgba(0, 0, 0, 0.3);
+    color: var(--text-black);
+    width: 20%;
+    height: 80%;
+    background-color: blue;
+    /* box-shadow: 0.1rem 0.8rem 0.9rem rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    margin: 2rem 1rem;
-    padding: 2rem 1rem;
+    justify-content: space-between; */
 }
 
 .title {
     text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
 }
 
 .details {

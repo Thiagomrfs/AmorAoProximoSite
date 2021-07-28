@@ -1,0 +1,29 @@
+.cards-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#education-actions, #culture-actions, #sports-actions, #food-actions {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.card {
+    width: 10rem;
+    height: 12.5rem;
+    background-color: red;
+}
+
+#actions .cards-container .card h3 {
+    color: royalblue;
+    line-height: normal;
+    font-size: 1rem;
+}
+

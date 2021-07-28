@@ -20,7 +20,7 @@ nav {
 }
 
 #logo-container {
-    background: transparent;
+    background: var(--background-one);
     width: 6rem;
     height: 100%;
     position: absolute;
