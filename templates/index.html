@@ -55,25 +55,37 @@
             <div class="actions-main-container">
                 <div class="categories-container">
                     <div class="category-card">
-                        <img src="{% static 'img/placeholder.jpg' %}" alt="categoria educação" class="category-image">
-                        <p class="category-title">Educação</p>
+                        <img src="{% static 'img/categories/education.png' %}" alt="categoria educação" class="category-image">
+                        <div class="title-container">
+                            <p class="category-title">Educação</p>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <img src="{% static 'img/categories/culture.png' %}" alt="categoria educação" class="category-image">
+                        <div class="title-container">
+                            <p class="category-title">Cultura</p>
+                        </div>
                     </div>
                     <div class="category-card">
                         <img src="{% static 'img/placeholder.jpg' %}" alt="categoria educação" class="category-image">
-                        <p class="category-title">Cultura</p>
+                        <div class="title-container">
+                            <p class="category-title">Esporte</p>
+                        </div>
                     </div>
                     <div class="category-card">
-                        <img src="{% static 'img/placeholder.jpg' %}" alt="categoria educação" class="category-image">
-                        <p class="category-title">Esporte</p>
-                    </div>
-                    <div class="category-card">
-                        <img src="{% static 'img/placeholder.jpg' %}" alt="categoria educação" class="category-image">
-                        <p class="category-title">Comida na mesa</p>
+                        <img src="{% static 'img/categories/food.png' %}" alt="categoria educação" class="category-image">
+                        <div class="title-container">
+                            <p class="category-title">Comida na mesa</p>
+                        </div>
                     </div>
                 </div>
                 <div class="actions-container">
                     <div id="education-actions">
                         <div class="cards-container">
+                            <div class="category-indicator">
+                                <p>Visualizando ações para: </p>
+                                <p class="category-indicator-name">Educação</p>
+                            </div>
                             <ul id="lightSlider1">
                                 {% for action in education %}
                                     <li>
@@ -88,6 +100,10 @@
                     </div>
                     <div id="culture-actions">
                         <div class="cards-container">
+                            <div class="category-indicator">
+                                <p>Visualizando ações para: </p>
+                                <p class="category-indicator-name">Cultura</p>
+                            </div>
                             <ul id="lightSlider2">
                                 {% for action in culture %}
                                     <div class="card">
@@ -99,6 +115,10 @@
                     </div>
                     <div id="sports-actions">
                         <div class="cards-container">
+                            <div class="category-indicator">
+                                <p>Visualizando ações para: </p>
+                                <p class="category-indicator-name">Esporte</p>
+                            </div>
                             <ul id="lightSlider3">
                                 {% for action in culture %}
                                     <div class="card">
@@ -110,6 +130,10 @@
                     </div>
                     <div id="food-actions">
                         <div class="cards-container">
+                            <div class="category-indicator">
+                                <p>Visualizando ações para: </p>
+                                <p class="category-indicator-name">Comida na mesa</p>
+                            </div>
                             <ul id="lightSlider4">
                                 {% for action in culture %}
                                     <div class="card">
