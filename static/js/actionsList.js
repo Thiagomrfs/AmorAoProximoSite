@@ -1,3 +1,34 @@
+sliders = []
+
+params = {
+    pager: false,
+    // enableDrag: false,
+    loop: false,
+    galery: true
+}
+
+$(document).ready(function() {
+    let slider = $("#lightSlider1").lightSlider(params);
+    sliders.push(slider);
+});
+
+$(document).ready(function() {
+    let slider = $("#lightSlider2").lightSlider(params);
+    sliders.push(slider) 
+});
+
+$(document).ready(function() {
+    let slider = $("#lightSlider3").lightSlider(params);
+    sliders.push(slider) 
+});
+
+$(document).ready(function() {
+    let slider = $("#lightSlider4").lightSlider(params);
+    sliders.push(slider) 
+});
+
+sliders.map((slider) => console.log(slider.id))
+
 categories = document.querySelectorAll(".category-card");
 categories = Array.from(categories);
 
@@ -35,6 +66,8 @@ function changeActionsVisibility(category) {
         else
             $(`#${action.id}`).hide()
     })
+
+    sliders.map((slider) => slider.refresh());
 }
 
 changeActionsVisibility("Educação");

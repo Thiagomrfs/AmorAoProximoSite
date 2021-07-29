@@ -37,10 +37,11 @@
 .card {
     width: 10rem;
     height: 12.5rem;
-    background-color: var(--primary);
+    background-color: var(--secondary);
+    color: var(--app-white);
 }
 
-#actions .cards-container .card h4 {
+ .card h4 {
     line-height: normal;
     font-size: 1rem;
     font-weight: 600;

@@ -106,9 +106,13 @@
                             </div>
                             <ul id="lightSlider2">
                                 {% for action in culture %}
+                                <li>
                                     <div class="card">
-                                        def
+                                        <h4>{{action.name}}</h4>
+                                        <p>{{action.description}}</p>
                                     </div>
+                                </li>
+                                    
                                 {% endfor %}
                             </ul>
                         </div>
@@ -120,10 +124,13 @@
                                 <p class="category-indicator-name">Esporte</p>
                             </div>
                             <ul id="lightSlider3">
-                                {% for action in culture %}
-                                    <div class="card">
-                                        ghi
-                                    </div>
+                                {% for action in sports %}
+                                    <li>
+                                        <div class="card">
+                                            <h4>{{action.name}}</h4>
+                                            <p>{{action.description}}</p>
+                                        </div>
+                                    </li>
                                 {% endfor %}
                             </ul>
                         </div>
@@ -135,10 +142,13 @@
                                 <p class="category-indicator-name">Comida na mesa</p>
                             </div>
                             <ul id="lightSlider4">
-                                {% for action in culture %}
-                                    <div class="card">
-                                        jkl
-                                    </div>
+                                {% for action in food %}
+                                    <li>
+                                        <div class="card">
+                                            <h4>{{action.name}}</h4>
+                                            <p>{{action.description}}</p>
+                                        </div>
+                                    </li>
                                 {% endfor %}
                             </ul>
                         </div>
