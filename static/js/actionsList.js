@@ -2,9 +2,27 @@ sliders = []
 
 params = {
     pager: false,
-    // enableDrag: false,
-    loop: false,
-    galery: true
+    autoWidth: true,
+    controls: false,
+    easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+    addClass: 'sliderContainer',
+    responsive : [
+        {
+            breakpoint:800,
+            settings: {
+                item:3,
+                slideMove:1,
+                slideMargin:6,
+            }
+        },
+        {
+            breakpoint:480,
+            settings: {
+                item:2,
+                slideMove:1
+            }
+        }
+    ]
 }
 
 $(document).ready(function() {
@@ -27,7 +45,8 @@ $(document).ready(function() {
     sliders.push(slider) 
 });
 
-sliders.map((slider) => console.log(slider.id))
+
+
 
 categories = document.querySelectorAll(".category-card");
 categories = Array.from(categories);
@@ -67,7 +86,14 @@ function changeActionsVisibility(category) {
             $(`#${action.id}`).hide()
     })
 
-    sliders.map((slider) => slider.refresh());
+    sliders.map((slider) => {
+        slider.refresh();
+    });
+    
+    Array.from(document.querySelectorAll(".lightSlider")).map((c) => 
+        // c.style = "height: 80%; width: 100%; padding-bottom: 0%; transform: translate3d(0px, 0px, 0px);"
+        c.style = "display: flex; width: 100%; overflow: hidden;"
+    )
 }
 
 changeActionsVisibility("Educação");

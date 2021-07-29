@@ -1,3 +1,7 @@
+#lightSlider1, #lightSlider2, #lightslider3, #lightSlider3 {
+    width: 100%;
+}
+
 .cards-container {
     width: 100%;
     height: 100%;
@@ -5,6 +9,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .cards-container .category-indicator {
@@ -25,6 +30,13 @@
     font-weight: 700;
 }
 
+.cards-container .sliderContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #education-actions, #culture-actions, #sports-actions, #food-actions {
     width: 100%;
     height: 100%;
@@ -39,6 +51,13 @@
     height: 12.5rem;
     background-color: var(--secondary);
     color: var(--app-white);
+
+    border-radius: 2rem;
+    margin-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
  .card h4 {
