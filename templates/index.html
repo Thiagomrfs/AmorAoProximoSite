@@ -110,11 +110,12 @@
                                 {% for action in culture %}
                                 <li>
                                     <div class="card">
-                                        <h4>{{action.name}}</h4>
-                                        <p>{{action.description}}</p>
+                                        <img src="{% static 'img/categories/culture.png' %}" alt="representação de cultura" class="action-image">
+                                        <div class="title-container">
+                                            <p class="action-title">{{action.name}}</p>
+                                        </div>
                                     </div>
                                 </li>
-                                    
                                 {% endfor %}
                             </ul>
                         </div>
@@ -127,12 +128,14 @@
                             </div>
                             <ul id="lightSlider3">
                                 {% for action in sports %}
-                                    <li>
-                                        <div class="card">
-                                            <h4>{{action.name}}</h4>
-                                            <p>{{action.description}}</p>
+                                <li>
+                                    <div class="card">
+                                        <img src="{% static 'img/placeholder.jpg' %}" alt="representação de esportes" class="action-image">
+                                        <div class="title-container">
+                                            <p class="action-title">{{action.name}}</p>
                                         </div>
-                                    </li>
+                                    </div>
+                                </li>
                                 {% endfor %}
                             </ul>
                         </div>
@@ -145,12 +148,14 @@
                             </div>
                             <ul id="lightSlider4">
                                 {% for action in food %}
-                                    <li>
-                                        <div class="card">
-                                            <h4>{{action.name}}</h4>
-                                            <p>{{action.description}}</p>
+                                <li>
+                                    <div class="card">
+                                        <img src="{% static 'img/categories/food.png' %}" alt="representação de comida na mesa" class="action-image">
+                                        <div class="title-container">
+                                            <p class="action-title">{{action.name}}</p>
                                         </div>
-                                    </li>
+                                    </div>
+                                </li>
                                 {% endfor %}
                             </ul>
                         </div>
