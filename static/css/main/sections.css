@@ -79,7 +79,7 @@
     font-size: 2rem;
     justify-self: center;
     margin-top: 2rem;
-    margin-left: var(--title-left-margin);
+    margin-left: var(--section-left-margin);
 }
 
 #history .history-left img {
@@ -130,7 +130,7 @@
     font-style: normal;
 
     margin-left: var(--section-left-margin);
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 #actions .categories-container {
@@ -221,10 +221,11 @@
 
 #updates .updates-container {
     width: 100%;
-    height: 80%;
+    height: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-self: center;
 
     padding-right: 4rem;
 }
@@ -266,5 +267,68 @@
 #volunteer {
     background-color: var(--background-two);
     width: 100vw;
-    height: 100vh;
+    height: 160vh;
+    padding-left: var(--section-left-margin);
+    display: flex;
+    flex-direction: column;
+}
+
+#volunteer .intro {
+    padding-top: 4rem;
+    width: 80%;
+    height: 30%;
+    margin-bottom: 1rem;
+}
+
+#volunteer .intro h3 {
+    width: 60%;
+    color: var(--text-black);
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+#volunteer .intro p {
+    width: 65%;
+    margin-bottom: 1.3rem;
+}
+
+#volunteer .volunteer-call {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+#volunteer .volunteer-profiles {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 12rem);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#volunteer .volunteer-card {
+    background-color: var(--primary);
+    border-radius: 0.8rem;
+    width: 12rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#volunteer button {
+    width: 15rem;
+    height: 4rem;
+    border: none;
+    background-color: var(--secondary);
+    border-radius: 1rem;
+    align-self: flex-end;
+    transition: 300ms;
+}
+
+#volunteer button:hover {
+    background-color: var(--secondary-hover);
+    cursor: pointer;
 }
