@@ -164,7 +164,17 @@
             </div>
         </section>
         <section id="updates">
-
+            <h3>Acompanhe as novidades do instituto!</h3>
+            <div class="updates-container">
+                {% for update in updates %}
+                <div class="update-card">
+                    <div class="update-title">
+                        <p>{{update.titulo}}</p>
+                    </div>
+                    <img src="{{ update.imagem.url }}" alt="Update">
+                </div>
+                {% endfor %}
+            </div>
         </section>
         <section id="volunteer">
 

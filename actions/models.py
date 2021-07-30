@@ -14,7 +14,7 @@ class Action(models.Model):
     end_date = models.DateField()
     responsible = models.CharField(max_length=50)
     description = models.TextField()
-    prerequisites = models.CharField(max_length=500)
+    prerequisites = models.CharField(max_length=100)
     
     def __str__(self):
         return self.name

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 :root {
-    --title-left-margin: 4rem;
+    --section-left-margin: 4rem;
 
     --app-white: #edf0f1;
     --app-black: #333333;

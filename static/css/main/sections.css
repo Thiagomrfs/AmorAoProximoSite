@@ -129,7 +129,7 @@
     line-height: 3rem;
     font-style: normal;
 
-    margin-left: var(--title-left-margin);
+    margin-left: var(--section-left-margin);
     margin-top: 2rem;
 }
 
@@ -207,6 +207,60 @@
     background-color: var(--background-one);
     width: 100vw;
     height: 100vh;
+    padding-left: var(--section-left-margin);
+    display: flex;
+    flex-direction: column;
+}
+
+#updates h3 {
+    color: var(--text-black);
+    margin-top: 4rem;
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+
+#updates .updates-container {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-right: 4rem;
+}
+
+#updates .updates-container .update-card {
+    width: 14rem;
+    height: 16.5rem;
+    background-color: var(--secondary);
+    box-shadow: -4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+#updates .updates-container .update-card .update-title {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+#updates .updates-container .update-card p {
+    color: var(--app-white);
+    text-align: center;
+    font-size: 1rem;
+}
+
+#updates .updates-container .update-card img {
+    width: 80%;
+    height: 70%;
+    border-radius: 1.5rem;
 }
 
 #volunteer {
