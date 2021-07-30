@@ -90,8 +90,10 @@
                                 {% for action in education %}
                                     <li>
                                         <div class="card">
-                                            <h4>{{action.name}}</h4>
-                                            <p>{{action.description}}</p>
+                                            <img src="{% static 'img/categories/education.png' %}" alt="representação de educação" class="action-image">
+                                            <div class="title-container">
+                                                <p class="action-title">{{action.name}}</p>
+                                            </div>
                                         </div>
                                     </li>
                                 {% endfor %}
