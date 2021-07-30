@@ -318,6 +318,19 @@
     justify-content: center;
 }
 
+#volunteer .volunteer-card img {
+    width: 60%;
+    height: 60%;
+    margin-bottom: 0.5rem;
+}
+
+#volunteer .volunteer-card p {
+    color: var(--app-white);
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
 #volunteer button {
     width: 15rem;
     height: 4rem;
