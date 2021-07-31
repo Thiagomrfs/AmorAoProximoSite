@@ -56,27 +56,15 @@
                 <div class="categories-container">
                     <div class="category-card">
                         <img src="{% static 'img/categories/education.png' %}" alt="categoria educação" class="category-image">
-                        <div class="title-container">
-                            <p class="category-title">Educação</p>
-                        </div>
                     </div>
                     <div class="category-card">
-                        <img src="{% static 'img/categories/culture.png' %}" alt="categoria educação" class="category-image">
-                        <div class="title-container">
-                            <p class="category-title">Cultura</p>
-                        </div>
+                        <img src="{% static 'img/categories/culture.png' %}" alt="categoria cultura" class="category-image">
                     </div>
                     <div class="category-card">
-                        <img src="{% static 'img/placeholder.jpg' %}" alt="categoria educação" class="category-image">
-                        <div class="title-container">
-                            <p class="category-title">Esporte</p>
-                        </div>
+                        <img src="{% static 'img/categories/sports.png' %}" alt="categoria esporte" class="category-image">
                     </div>
                     <div class="category-card">
-                        <img src="{% static 'img/categories/food.png' %}" alt="categoria educação" class="category-image">
-                        <div class="title-container">
-                            <p class="category-title">Comida na mesa</p>
-                        </div>
+                        <img src="{% static 'img/categories/food.png' %}" alt="categoria comida na mesa" class="category-image">
                     </div>
                 </div>
                 <div class="actions-container">
@@ -130,7 +118,7 @@
                                 {% for action in sports %}
                                 <li>
                                     <div class="card">
-                                        <img src="{% static 'img/placeholder.jpg' %}" alt="representação de esportes" class="action-image">
+                                        <img src="{% static 'img/categories/sports.png' %}" alt="representação de esportes" class="action-image">
                                         <div class="title-container">
                                             <p class="action-title">{{action.name}}</p>
                                         </div>

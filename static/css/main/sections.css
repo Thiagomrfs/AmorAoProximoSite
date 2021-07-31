@@ -163,25 +163,8 @@
 
 #actions .categories-container .category-card .category-image {
     width: 100%;
-    height: 80%;
-    border-radius: 0.8rem 0.8rem 0 0;
-}
-
-#actions .categories-container .category-card .title-container {
-    flex: 1;
-    background-color: var(--app-white);
-    border-radius: 0 0 0.8rem 0.8rem;
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#actions .categories-container .category-card .category-title {
-    color: var(--text-black);
-    font-size: 1.3vw;
-    font-weight: 500;
+    height: 100%;
+    border-radius: 0.8rem;
 }
 
 #actions .actions-main-container {

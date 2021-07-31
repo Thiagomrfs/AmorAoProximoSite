@@ -61,14 +61,16 @@ relations = {
     "Educação": "education-actions",
     "Cultura": "culture-actions",
     "Esporte": "sports-actions",
-    "Comida na mesa": "food-actions"
+    "Comida": "food-actions"
 }
 
 categories.map((c) => {
     c.addEventListener('click', function(event){
         clearCategorySelection();
         event.currentTarget.classList.add("selected");
-        changeActionsVisibility(event.currentTarget.lastElementChild.innerText);
+        let category = event.currentTarget.lastElementChild.alt.split(" ")[1]
+        category = category.charAt(0).toUpperCase() + category.slice(1);
+        changeActionsVisibility(category);
     });
 })
 
@@ -91,7 +93,6 @@ function changeActionsVisibility(category) {
     });
     
     Array.from(document.querySelectorAll(".lightSlider")).map((c) => 
-        // c.style = "height: 80%; width: 100%; padding-bottom: 0%; transform: translate3d(0px, 0px, 0px);"
         c.style = "display: flex; width: 100%; overflow: hidden;"
     )
 }
