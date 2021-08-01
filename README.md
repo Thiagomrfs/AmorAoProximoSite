@@ -1,5 +1,5 @@
 # Amor ao Próximo
--------------------------------------------------------------------------------------
+
 Uma aplicação web desenvolvida para a instituição Amor ao Próximo durante a disciplina de Projeto Integrado I.  
   
   
@@ -64,13 +64,13 @@ Com o auxílio da área do administrador provida pelo framework Django, o admini
 
 ##### Arquivos relacionados:
 
-    /actions/ : pasta contendo todas as operações relacionadas às ações.
+    **/actions/** : pasta contendo todas as operações relacionadas às ações.
     
-    /actions/models.py : model relacionado ao objeto ação, é o que dá a forma ao banco de dados (tendo em mente que estamos tratando o esquema Model-View-Template).
+    **/actions/models.py** : model relacionado ao objeto ação, é o que dá a forma ao banco de dados (tendo em mente que estamos tratando o esquema Model-View-Template).
     
-    /actions/views.py : a view principal, ela que receberá a requisição do cliente e retornará o template juntamente com o contexto da aplicação.
+    **/actions/views.py** : a view principal, ela que receberá a requisição do cliente e retornará o template juntamente com o contexto da aplicação.
     
-    db.sqlite3 : arquivo de banco de dados onde serão armazenadas as ações.
+    **db.sqlite3** : arquivo de banco de dados onde serão armazenadas as ações.
 
 #### 3.3. RF0003: Remoção e edição de ações
 
