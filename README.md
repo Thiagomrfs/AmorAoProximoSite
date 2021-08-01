@@ -74,6 +74,12 @@ Com o auxílio da área do administrador provida pelo framework Django, o admini
     
     db.sqlite3 : arquivo de banco de dados onde serão armazenadas as ações.
 
+    /static/css/main/sections.css : arquivo de estilização da página inicial. As estilizações para as ações estão sob o id #actions.
+
+    /static/css/main/actionCard.css : arquivo de estilização dos cartões de ação.
+
+    /static/js/actionsList.js : código para a criação e atualização do slider para a disposição dos cards para cada ação.
+
 #### 3.3. RF0003: Remoção e edição de ações
 Com o auxílio da área do administrador provida pelo framework Django, o administrador do sistema pode realizar alterações nas ações, assim como deletá-las.
 
@@ -86,6 +92,21 @@ Com o auxílio da área do administrador provida pelo framework Django, o admini
     /actions/models.py : model relacionado ao objeto ação, é o que dá a forma ao banco de dados (tendo em mente que estamos tratando o esquema Model-View-Template).
 
 #### 3.4. RF0004: Postar Atualizações
+Com o auxílio da área do administrador provida pelo framework Django, o administrador do sistema pode postar atualizões sobre ONG para que elas sejam dispostas na página inicial da aplicação.
+
+##### Arquivos relacionados:
+
+    localhost:8000/admin : ambiente de administrador do Django.
+
+    /updates/ : pasta contendo todas as operações relacionadas aos updates
+
+    /updates/models.py : model relacionado ao objeto update, é o que dá a forma ao banco de dados (tendo em mente que estamos tratando o esquema Model-View-Template).
+
+    db.sqlite3 : arquivo de banco de dados onde serão armazenadas as ações.
+
+    /media/updates/ : pasta destino das imagens de cada update.
+
+    /static/css/main/sections.css : arquivo de estilização da página inicial. As estilizações para os updates estão sob o id #updates.
 
 
 #### 3.5. RF0005: Visualização das ações
