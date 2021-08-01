@@ -158,6 +158,7 @@ Bom, com o banco criado, vamos criar uma conta de administrador para que possamo
 > python3 manage.py createsuperuser
 
 *obs: esses dados serão usados para logarmos na área de administrador do Django, por isso anote-os ou faça uma forcinha para lembrar*
+
 *obs2: o campo de senha **não irá aparecer** quando for preenchido, isso é uma medida de segurança, não se preocupe*
 
 Finalmente, para iniciar o servidor, digite:
