@@ -122,4 +122,49 @@ Com o auxílio da área do administrador provida pelo framework Django, o admini
 
 #### 4.1. Dependências
 
+##### Python 3
+A aplicação depende fortemente do [Python3](https://www.python.org/).
+
+##### Django
+Ao instalar o python, também será instalado o gerenciador de pacotes pip, utilizaremos ele para instalar o Django. Com o pip instalado apenas vá em algum terminal e digite o comando:
+
+> pip install Django
+
+##### Pillow
+As atualizações possuem imagens em seu corpo, para lidarmos com imagens no Django é necessário a biblioteca pillow, que também pode ser instalada com o pip através do comando:
+
+> pip install pillow
+
 #### 4.2. Como iniciar o servidor
+Primeiro, vamos preparar a o banco de dados. Para isso, na pasta do projeto, abra o terminal e digite o comando:
+
+###### Windows:
+> py manage.py makemigrations
+###### Linux: 
+> python3 manage.py makemigrations
+
+logo em seguida iremos aplicar as mudanças no banco e efetivamente moldá-lo com:
+
+###### Windows:
+> py manage.py migrate
+###### Linux: 
+> python3 manage.py migrate
+
+Bom, com o banco criado, vamos criar uma conta de administrador para que possamos acessar a área de administração do Django (o que nos dará acesso aos models). Para isso digite:
+
+###### Windows:
+> py manage.py createsuperuser
+###### Linux: 
+> python3 manage.py createsuperuser
+
+*obs: esses dados serão usados para logarmos na área de administrador do Django, por isso anote-os ou faça uma forcinha para lembrar*
+*obs2: o campo de senha **não irá aparecer** quando for preenchido, isso é uma medida de segurança, não se preocupe*
+
+Finalmente, para iniciar o servidor, digite:
+
+###### Windows:
+> py manage.py runserver
+###### Linux: 
+> python3 manage.py runserver
+
+Após isso você poderá acessar a aplicação no endereço *localhost:8000*.
