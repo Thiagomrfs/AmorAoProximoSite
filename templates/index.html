@@ -124,15 +124,25 @@
                             <ul id="lightSlider2">
                                 {% for action in culture %}
                                 <li>
-                                    <div class="card">
+                                    <div class="card" id="ButModal-{{action.name}}"
+                                    type = "button" 
+                                    onClick="modal('ButModal-{{action.name}}', {
+                                        'title': '{{action.name}}',
+                                        'description': '{{action.description}}',
+                                        'start_date': '{{action.start_date}}',
+                                        'end_date': '{{action.end_date}}',
+                                        'responsible': '{{action.responsible}}',
+                                        'requisites': '{{action.prerequisites}}'
+                                    })">
                                         <div class="image-container">
                                             {% with 'img/action_icons/'|add:action.icon as icon_path %}
-                                                <img src="{% static icon_path %}" alt="representação de {{action.icon}}" class="action-image">
+                                                <img id="{{action.name}}" src="{% static icon_path %}" alt="representação de {{action.icon}}" class="action-image" >
                                             {% endwith %}
                                         </div>
                                         <div class="title-container">
                                             <p class="action-title">{{action.name}}</p>
                                         </div>
+                                        
                                     </div>
                                 </li>
                                 {% endfor %}
@@ -148,15 +158,25 @@
                             <ul id="lightSlider3">
                                 {% for action in sports %}
                                 <li>
-                                    <div class="card">
+                                    <div class="card" id="ButModal-{{action.name}}"
+                                    type = "button" 
+                                    onClick="modal('ButModal-{{action.name}}', {
+                                        'title': '{{action.name}}',
+                                        'description': '{{action.description}}',
+                                        'start_date': '{{action.start_date}}',
+                                        'end_date': '{{action.end_date}}',
+                                        'responsible': '{{action.responsible}}',
+                                        'requisites': '{{action.prerequisites}}'
+                                    })">
                                         <div class="image-container">
                                             {% with 'img/action_icons/'|add:action.icon as icon_path %}
-                                                <img src="{% static icon_path %}" alt="representação de {{action.icon}}" class="action-image">
+                                                <img id="{{action.name}}" src="{% static icon_path %}" alt="representação de {{action.icon}}" class="action-image" >
                                             {% endwith %}
                                         </div>
                                         <div class="title-container">
                                             <p class="action-title">{{action.name}}</p>
                                         </div>
+                                        
                                     </div>
                                 </li>
                                 {% endfor %}
@@ -172,15 +192,25 @@
                             <ul id="lightSlider4">
                                 {% for action in food %}
                                 <li>
-                                    <div class="card">
+                                    <div class="card" id="ButModal-{{action.name}}"
+                                    type = "button" 
+                                    onClick="modal('ButModal-{{action.name}}', {
+                                        'title': '{{action.name}}',
+                                        'description': '{{action.description}}',
+                                        'start_date': '{{action.start_date}}',
+                                        'end_date': '{{action.end_date}}',
+                                        'responsible': '{{action.responsible}}',
+                                        'requisites': '{{action.prerequisites}}'
+                                    })">
                                         <div class="image-container">
                                             {% with 'img/action_icons/'|add:action.icon as icon_path %}
-                                                <img src="{% static icon_path %}" alt="representação de {{action.icon}}" class="action-image">
+                                                <img id="{{action.name}}" src="{% static icon_path %}" alt="representação de {{action.icon}}" class="action-image" >
                                             {% endwith %}
                                         </div>
                                         <div class="title-container">
                                             <p class="action-title">{{action.name}}</p>
                                         </div>
+                                        
                                     </div>
                                 </li>
                                 {% endfor %}
