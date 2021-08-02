@@ -1,13 +1,12 @@
 .modal {
     display: none;              /* Hidden */
-    position: absolute;            /* Positioning */
-    z-index: 9999;
-    padding-top: 100px;         /* Padding */
-    top: 40px;                     /* Cover Top */
-    left: 40px;
-    transform: translate(-50%, -50% );
-    width: 100%;                /* Cover all page */
-    height: 100%;
+    position: fixed;            /* Positioning */
+    z-index: 9;
+    padding-top: 5rem;         /* Padding */
+    top: 0;                     /* Cover Top */
+    left: 0;
+    width: 100vw;                /* Cover all page */
+    height: 100vh;
     background-color: rgba(0,0,0,0.5); /* Reduce page brigthness */
     }
 

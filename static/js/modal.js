@@ -1,20 +1,16 @@
-function modal (Modal,BtnModal){
+function modal (caller){
 
-    // Get the modal
-    var modal = document.getElementById(Modal); // Modal Id
-
-    // Get the button
-    var btn = document.getElementById(BtnModal); //Button Id
-
-    // Get the "X"
-    var span = document.getElementsByClassName("close-modal")[0];
-
-    // Opens the Modal
+    let modal = document.getElementById('action-modal'); 
+    let closebtn = modal.firstElementChild.querySelector('.close-modal')
+    let callerElement = document.getElementById(caller); 
+    
     modal.style.display = "block";
+
+    updateModalData(modal, callerElement);
 
 
     // Close the Modal
-    span.onclick = function() {
+    closebtn.onclick = function() {
         modal.style.display = "none";
     }
 
@@ -22,8 +18,14 @@ function modal (Modal,BtnModal){
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
-    }
+        }
     }
 
+}
 
+function updateModalData(modal, caller) {
+    let title = modal.firstElementChild.querySelector('.modal-action-title')
+    let description = modal.firstElementChild.querySelector('.modal-action-description')
+    title.innerText = caller.id.split('-')[1]
+    description.innerText = "kappa"
 }
