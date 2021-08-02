@@ -1,18 +1,17 @@
-function modal (){
+function modal (Modal,BtnModal){
 
     // Get the modal
-    var modal = document.getElementById("myModal"); // Modal Id
+    var modal = document.getElementById(Modal); // Modal Id
 
     // Get the button
-    var btn = document.getElementById("myBtnModal"); //Button Id
+    var btn = document.getElementById(BtnModal); //Button Id
 
     // Get the "X"
     var span = document.getElementsByClassName("close-modal")[0];
 
     // Opens the Modal
-    btn.onclick = function() {
-        modal.style.display = "block";
-    }
+    modal.style.display = "block";
+
 
     // Close the Modal
     span.onclick = function() {

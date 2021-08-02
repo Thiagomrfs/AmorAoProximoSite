@@ -4,6 +4,7 @@
 {% block styles %}
 <link rel="stylesheet" href="{% static 'css/main/sections.css' %}">
 <link rel="stylesheet" href="{% static 'css/main/actionCard.css' %}">
+<link rel="stylesheet" href="{% static 'css/modal.css' %}">
 {% endblock styles %}
 
 {% block content %}
@@ -77,15 +78,26 @@
                             <ul id="lightSlider1">
                                 {% for action in education %}
                                     <li>
-                                        <div class="card">
+                                        <div class="card" id= "ButModal" type = "button" onClick="modal('EspModal','ButModal')">
                                             <div class="image-container">
                                                 {% with 'img/action_icons/'|add:action.icon as icon_path %}
-                                                    <img src="{% static icon_path %}" alt="representação de {{action.icon}}" class="action-image">
+                                                    <img id="{{action.name}}" src="{% static icon_path %}" alt="representação de {{action.icon}}" class="action-image" >
                                                 {% endwith %}
                                             </div>
                                             <div class="title-container">
                                                 <p class="action-title">{{action.name}}</p>
                                             </div>
+                                            <script src= {% static "js/modal.js" %}> </script>  
+                                
+                                            <div id="EspModal" class= "modal">
+                                                    <div class="modal-content">
+                                                                <span class="close-modal">×</span>
+                                                                <h1>H1 </h1>
+                                                                <p>P</p>
+                                                    </div>
+                                            </div>    
+                                            
+
                                         </div>
                                     </li>
                                 {% endfor %}
