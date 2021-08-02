@@ -78,7 +78,11 @@
                                 {% for action in education %}
                                     <li>
                                         <div class="card">
-                                            <img src="{% static 'img/categories/education.png' %}" alt="representação de educação" class="action-image">
+                                            <div class="image-container">
+                                                {% with 'img/action_icons/'|add:action.icon as icon_path %}
+                                                    <img src="{% static icon_path %}" alt="representação de {{action.icon}}" class="action-image">
+                                                {% endwith %}
+                                            </div>
                                             <div class="title-container">
                                                 <p class="action-title">{{action.name}}</p>
                                             </div>
@@ -98,7 +102,11 @@
                                 {% for action in culture %}
                                 <li>
                                     <div class="card">
-                                        <img src="{% static 'img/categories/culture.png' %}" alt="representação de cultura" class="action-image">
+                                        <div class="image-container">
+                                            {% with 'img/action_icons/'|add:action.icon as icon_path %}
+                                                <img src="{% static icon_path %}" alt="representação de {{action.icon}}" class="action-image">
+                                            {% endwith %}
+                                        </div>
                                         <div class="title-container">
                                             <p class="action-title">{{action.name}}</p>
                                         </div>
@@ -118,7 +126,11 @@
                                 {% for action in sports %}
                                 <li>
                                     <div class="card">
-                                        <img src="{% static 'img/categories/sports.png' %}" alt="representação de esportes" class="action-image">
+                                        <div class="image-container">
+                                            {% with 'img/action_icons/'|add:action.icon as icon_path %}
+                                                <img src="{% static icon_path %}" alt="representação de {{action.icon}}" class="action-image">
+                                            {% endwith %}
+                                        </div>
                                         <div class="title-container">
                                             <p class="action-title">{{action.name}}</p>
                                         </div>
@@ -138,7 +150,11 @@
                                 {% for action in food %}
                                 <li>
                                     <div class="card">
-                                        <img src="{% static 'img/categories/food.png' %}" alt="representação de comida na mesa" class="action-image">
+                                        <div class="image-container">
+                                            {% with 'img/action_icons/'|add:action.icon as icon_path %}
+                                                <img src="{% static icon_path %}" alt="representação de {{action.icon}}" class="action-image">
+                                            {% endwith %}
+                                        </div>
                                         <div class="title-container">
                                             <p class="action-title">{{action.name}}</p>
                                         </div>

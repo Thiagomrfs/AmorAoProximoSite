@@ -91,10 +91,6 @@ function changeActionsVisibility(category) {
     sliders.map((slider) => {
         slider.refresh();
     });
-    
-    Array.from(document.querySelectorAll(".lightSlider")).map((c) => 
-        c.style = "display: flex; width: 100%; overflow: hidden;"
-    )
 }
 
 changeActionsVisibility("Educação");
