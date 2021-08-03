@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load remove_enters %}
 
 {% block styles %}
 <link rel="stylesheet" href="{% static 'css/main/sections.css' %}">
@@ -94,7 +95,7 @@
                                                 type = "button" 
                                                 onClick="modal('ButModal-{{action.name}}', {
                                                 'title': '{{action.name}}',
-                                                'description': '{{action.description}}',
+                                                'description': '{{action.description|remove_enters|remove_enters}}',
                                                 'start_date': '{{action.start_date}}',
                                                 'end_date': '{{action.end_date}}',
                                                 'responsible': '{{action.responsible}}',
@@ -133,7 +134,7 @@
                                                 type = "button" 
                                                 onClick="modal('ButModal-{{action.name}}', {
                                                 'title': '{{action.name}}',
-                                                'description': '{{action.description}}',
+                                                'description': '{{action.description|remove_enters}}',
                                                 'start_date': '{{action.start_date}}',
                                                 'end_date': '{{action.end_date}}',
                                                 'responsible': '{{action.responsible}}',
@@ -172,7 +173,7 @@
                                                 type = "button" 
                                                 onClick="modal('ButModal-{{action.name}}', {
                                                 'title': '{{action.name}}',
-                                                'description': '{{action.description}}',
+                                                'description': '{{action.description|remove_enters}}',
                                                 'start_date': '{{action.start_date}}',
                                                 'end_date': '{{action.end_date}}',
                                                 'responsible': '{{action.responsible}}',
@@ -211,7 +212,7 @@
                                                 type = "button" 
                                                 onClick="modal('ButModal-{{action.name}}', {
                                                 'title': '{{action.name}}',
-                                                'description': '{{action.description}}',
+                                                'description': '{{action.description|remove_enters}}',
                                                 'start_date': '{{action.start_date}}',
                                                 'end_date': '{{action.end_date}}',
                                                 'responsible': '{{action.responsible}}',

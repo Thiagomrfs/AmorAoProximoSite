@@ -1,12 +1,12 @@
 function modal (caller, details){
 
     let modal = document.getElementById('action-modal'); 
-    let closebtn = modal.firstElementChild.querySelector('.close-modal')
+    let closebtn = modal.firstElementChild.querySelector('.close-modal');
     let callerElement = document.getElementById(caller); 
     
     modal.style.display = "block";
 
-    updateModalData(modal, callerElement, details);
+    updateModalData(modal, details);
 
 
     // Close the Modal
@@ -23,7 +23,7 @@ function modal (caller, details){
 
 }
 
-function updateModalData(modal, caller, details) {
+function updateModalData(modal, details) {
     let title = modal.firstElementChild.querySelector('.modal-action-title')
     let startDate = modal.firstElementChild.querySelector('.modal-action-start')
     let endDate = modal.firstElementChild.querySelector('.modal-action-end')
@@ -31,10 +31,16 @@ function updateModalData(modal, caller, details) {
     let responsible = modal.firstElementChild.querySelector('.modal-action-responsible')
     let requisites = modal.firstElementChild.querySelector('.modal-action-requisites')
 
+    paragraphs = details['description'].split(';;;')
+
     title.innerText = details['title']
     startDate.innerText = details['start_date']
     endDate.innerText = details['end_date']
-    description.innerText = details['description']
+    description.innerHTML = ''
     responsible.innerText = details['responsible']
     requisites.innerText = details['requisites']
+
+    for (var i=0; i < paragraphs.length; i++) {
+        description.innerHTML += `<p>${paragraphs[i]}</p>`
+    }
 }
