@@ -16,7 +16,8 @@
     padding: 20px;          /* Padding */
     border: 1px solid #888; /* Fade in border */
     width: 50%;             /* Modal Width */
-}
+    border-radius: 1rem;
+    }
 
 .close-modal {    /* Close X */
     color: #aaaaaa;        
@@ -29,4 +30,38 @@
     color: #000;
     text-decoration: none;
     cursor: pointer;
+    }
+
+.button{
+
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 5rem 12rem;
+    text-align: right;
+    text-decoration: none;
+    display: block;
+    font-size: medium;
+    border-radius: 1rem;
+    float: right;
+
 }
+.button:hover{
+
+    background-color: darkred;
+
+}
+
+.button:active{
+
+    background-color: red;
+    box-shadow: 5rem #666;
+    transform: translateY(4px);
+
+}
+
+.flavor-text, .modal-action-start, .modal-action-end, .modal-action-responsible, .modal-action-requisites{
+
+    display: inline;
+}
+
