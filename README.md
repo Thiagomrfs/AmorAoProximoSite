@@ -110,7 +110,15 @@ Com o auxílio da área do administrador provida pelo framework Django, o admini
 
 
 #### 3.5. RF0005: Visualização das ações
-> implementação em andamento
+Após uma ação ser criada, os usuários podem adquirir mais informações sobre as mesmas ao clicar no card que à representa, cards esses divididos nas sub-categorias: Educação, Cultura, Esporte e Comida na Mesa, após o clique, um modal aparecerá contendo as informações: Título, Data de Início, data de Finalização, Descrição, Instrutor(a) e Requisitos, essas infrmações são providas por meio da área de administrador promovida pelo framework Django
+
+##### Arquivos relacionados:
+
+    localhost/8000/admin: ambiente de administrador do Django
+
+    /static/js/modal.js : função que executa o modal
+
+    /static/css/modal.css : arquivo de estilização do modal
 
 #### 3.6. RF0006: Cadastro nas ações
 > ainda não implementado
