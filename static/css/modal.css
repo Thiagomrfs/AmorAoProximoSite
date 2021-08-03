@@ -13,16 +13,18 @@
 .modal-content {
     background-color: #ffffff;  /* Modal background */
     margin: auto;           /* Margin */
-    padding: 20px;          /* Padding */
-    border: 1px solid #888; /* Fade in border */
+    padding: 4rem 5rem;          /* Padding */
+    border: 0.2rem solid #888; /* Fade in border */
     width: 50%;             /* Modal Width */
     border-radius: 1rem;
+    overflow-y: scroll;
+    padding-bottom: 5rem;
     }
 
 .close-modal {    /* Close X */
     color: #aaaaaa;        
     float: right;
-    font-size: 42px;
+    font-size: 1.5rem;
 }
 
 .close-modal:hover,
@@ -34,27 +36,30 @@
 
 .button{
 
-    background-color: red;
+    background-color: var(--secondary);
     border: none;
     color: white;
-    padding: 5rem 12rem;
+    padding: 1rem 3rem;
     text-align: right;
     text-decoration: none;
     display: block;
-    font-size: medium;
+    font-size: x-large;
     border-radius: 1rem;
     float: right;
+    box-shadow: 0rem 1rem 1rem 0 #666;
+    
+
 
 }
 .button:hover{
 
-    background-color: darkred;
+    background-color: var(--secondary-hover);
 
 }
 
 .button:active{
 
-    background-color: red;
+    background-color: var(--secondary);
     box-shadow: 5rem #666;
     transform: translateY(4px);
 
@@ -63,5 +68,28 @@
 .flavor-text, .modal-action-start, .modal-action-end, .modal-action-responsible, .modal-action-requisites{
 
     display: inline;
+    font-family: Roboto, sans-serif;
 }
 
+
+
+.modal-action-title{
+
+    font-family: Montserrat, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bolder;
+
+}
+
+.modal-action-description{
+    font-family: Roboto, sans-serif;
+    
+}
+
+.hr-style{
+    border: 0rem;
+    height: 0.1rem;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
+
+
+}
