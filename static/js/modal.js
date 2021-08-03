@@ -14,14 +14,14 @@ function modal (caller, details){
     // Close the Modal
     closebtn.onclick = function() {
         modal.style.display = "none";
-        body.style.overflowY = "hidden";
+        body.style.overflowY = "";
     }
 
     // Close if clicked elsewhere
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
-            body.style.overflowY = "hidden";
+            body.style.overflowY = "";
         }
     }
 
