@@ -48,8 +48,7 @@
                 </p>
             </div>
         </section>
-        <section id="donations">
-            
+        <section id="donations">       
         </section>
         <section id="actions">
             <h3>Ações que realizamos</h3>
@@ -87,32 +86,37 @@
                                 <p>Visualizando ações para: </p>
                                 <p class="category-indicator-name">Educação</p>
                             </div>
-                            <ul id="lightSlider1">
-                                {% for action in education %}
-                                    <li>
-                                        <div class="card" id="ButModal-{{action.name}}"
-                                        type = "button" 
-                                        onClick="modal('ButModal-{{action.name}}', {
-                                            'title': '{{action.name}}',
-                                            'description': '{{action.description}}',
-                                            'start_date': '{{action.start_date}}',
-                                            'end_date': '{{action.end_date}}',
-                                            'responsible': '{{action.responsible}}',
-                                            'requisites': '{{action.prerequisites}}'
-                                        })">
-                                            <div class="image-container">
-                                                {% with 'img/action_icons/'|add:action.icon as icon_path %}
-                                                    <img id="{{action.name}}" src="{% static icon_path %}" alt="representação de {{action.icon}}" class="action-image" >
-                                                {% endwith %}
+                            {% if education %}
+                                <ul id="lightSlider1">
+                                    {% for action in education %}
+                                        <li>
+                                            <div class="card" id="ButModal-{{action.name}}"
+                                                type = "button" 
+                                                onClick="modal('ButModal-{{action.name}}', {
+                                                'title': '{{action.name}}',
+                                                'description': '{{action.description}}',
+                                                'start_date': '{{action.start_date}}',
+                                                'end_date': '{{action.end_date}}',
+                                                'responsible': '{{action.responsible}}',
+                                                'requisites': '{{action.prerequisites}}'
+                                                })">
+                                                <div class="image-container">
+                                                    {% with 'img/action_icons/'|add:action.icon as icon_path %}
+                                                        <img id="{{action.name}}" src="{% static icon_path %}" alt="representação de {{action.icon}}" class="action-image" >
+                                                    {% endwith %}
+                                                </div>
+                                                <div class="title-container">
+                                                    <p class="action-title">{{action.name}}</p>
+                                                </div>
                                             </div>
-                                            <div class="title-container">
-                                                <p class="action-title">{{action.name}}</p>
-                                            </div>
-                                            
-                                        </div>
-                                    </li>
-                                {% endfor %}
-                            </ul>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                                {% else %}
+                                <div class="empty-category">
+                                    <h4 class="empty-category-warning">Desculpe, não temos nenhuma ação ocorrendo nessa categoria no momento.</h4>
+                                </div>
+                                {% endif %}
                         </div>
                     </div>
                     <div id="culture-actions">
@@ -121,32 +125,37 @@
                                 <p>Visualizando ações para: </p>
                                 <p class="category-indicator-name">Cultura</p>
                             </div>
-                            <ul id="lightSlider2">
-                                {% for action in culture %}
-                                <li>
-                                    <div class="card" id="ButModal-{{action.name}}"
-                                    type = "button" 
-                                    onClick="modal('ButModal-{{action.name}}', {
-                                        'title': '{{action.name}}',
-                                        'description': '{{action.description}}',
-                                        'start_date': '{{action.start_date}}',
-                                        'end_date': '{{action.end_date}}',
-                                        'responsible': '{{action.responsible}}',
-                                        'requisites': '{{action.prerequisites}}'
-                                    })">
-                                        <div class="image-container">
-                                            {% with 'img/action_icons/'|add:action.icon as icon_path %}
-                                                <img id="{{action.name}}" src="{% static icon_path %}" alt="representação de {{action.icon}}" class="action-image" >
-                                            {% endwith %}
-                                        </div>
-                                        <div class="title-container">
-                                            <p class="action-title">{{action.name}}</p>
-                                        </div>
-                                        
-                                    </div>
-                                </li>
-                                {% endfor %}
-                            </ul>
+                            {% if culture %}
+                                <ul id="lightSlider2">
+                                    {% for action in culture %}
+                                        <li>
+                                            <div class="card" id="ButModal-{{action.name}}"
+                                                type = "button" 
+                                                onClick="modal('ButModal-{{action.name}}', {
+                                                'title': '{{action.name}}',
+                                                'description': '{{action.description}}',
+                                                'start_date': '{{action.start_date}}',
+                                                'end_date': '{{action.end_date}}',
+                                                'responsible': '{{action.responsible}}',
+                                                'requisites': '{{action.prerequisites}}'
+                                                })">
+                                                <div class="image-container">
+                                                    {% with 'img/action_icons/'|add:action.icon as icon_path %}
+                                                        <img id="{{action.name}}" src="{% static icon_path %}" alt="representação de {{action.icon}}" class="action-image" >
+                                                    {% endwith %}
+                                                </div>
+                                                <div class="title-container">
+                                                    <p class="action-title">{{action.name}}</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                                {% else %}
+                                <div class="empty-category">
+                                    <h4 class="empty-category-warning">Desculpe, não temos nenhuma ação ocorrendo nessa categoria no momento.</h4>
+                                </div>
+                            {% endif %}
                         </div>
                     </div>
                     <div id="sports-actions">
@@ -155,32 +164,37 @@
                                 <p>Visualizando ações para: </p>
                                 <p class="category-indicator-name">Esporte</p>
                             </div>
-                            <ul id="lightSlider3">
-                                {% for action in sports %}
-                                <li>
-                                    <div class="card" id="ButModal-{{action.name}}"
-                                    type = "button" 
-                                    onClick="modal('ButModal-{{action.name}}', {
-                                        'title': '{{action.name}}',
-                                        'description': '{{action.description}}',
-                                        'start_date': '{{action.start_date}}',
-                                        'end_date': '{{action.end_date}}',
-                                        'responsible': '{{action.responsible}}',
-                                        'requisites': '{{action.prerequisites}}'
-                                    })">
-                                        <div class="image-container">
-                                            {% with 'img/action_icons/'|add:action.icon as icon_path %}
-                                                <img id="{{action.name}}" src="{% static icon_path %}" alt="representação de {{action.icon}}" class="action-image" >
-                                            {% endwith %}
-                                        </div>
-                                        <div class="title-container">
-                                            <p class="action-title">{{action.name}}</p>
-                                        </div>
-                                        
-                                    </div>
-                                </li>
-                                {% endfor %}
-                            </ul>
+                            {% if sports %}
+                                <ul id="lightSlider3">
+                                    {% for action in sports %}
+                                        <li>
+                                            <div class="card" id="ButModal-{{action.name}}"
+                                                type = "button" 
+                                                onClick="modal('ButModal-{{action.name}}', {
+                                                'title': '{{action.name}}',
+                                                'description': '{{action.description}}',
+                                                'start_date': '{{action.start_date}}',
+                                                'end_date': '{{action.end_date}}',
+                                                'responsible': '{{action.responsible}}',
+                                                'requisites': '{{action.prerequisites}}'
+                                                })">
+                                                <div class="image-container">
+                                                    {% with 'img/action_icons/'|add:action.icon as icon_path %}
+                                                        <img id="{{action.name}}" src="{% static icon_path %}" alt="representação de {{action.icon}}" class="action-image" >
+                                                    {% endwith %}
+                                                </div>
+                                                <div class="title-container">
+                                                    <p class="action-title">{{action.name}}</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                                {% else %}
+                                <div class="empty-category">
+                                    <h4 class="empty-category-warning">Desculpe, não temos nenhuma ação ocorrendo nessa categoria no momento.</h4>
+                                </div>
+                            {% endif %}
                         </div>
                     </div>
                     <div id="food-actions">
@@ -189,32 +203,37 @@
                                 <p>Visualizando ações para: </p>
                                 <p class="category-indicator-name">Comida na mesa</p>
                             </div>
-                            <ul id="lightSlider4">
-                                {% for action in food %}
-                                <li>
-                                    <div class="card" id="ButModal-{{action.name}}"
-                                    type = "button" 
-                                    onClick="modal('ButModal-{{action.name}}', {
-                                        'title': '{{action.name}}',
-                                        'description': '{{action.description}}',
-                                        'start_date': '{{action.start_date}}',
-                                        'end_date': '{{action.end_date}}',
-                                        'responsible': '{{action.responsible}}',
-                                        'requisites': '{{action.prerequisites}}'
-                                    })">
-                                        <div class="image-container">
-                                            {% with 'img/action_icons/'|add:action.icon as icon_path %}
-                                                <img id="{{action.name}}" src="{% static icon_path %}" alt="representação de {{action.icon}}" class="action-image" >
-                                            {% endwith %}
-                                        </div>
-                                        <div class="title-container">
-                                            <p class="action-title">{{action.name}}</p>
-                                        </div>
-                                        
-                                    </div>
-                                </li>
-                                {% endfor %}
-                            </ul>
+                            {% if food %}
+                                <ul id="lightSlider4">
+                                    {% for action in food %}
+                                        <li>
+                                            <div class="card" id="ButModal-{{action.name}}"
+                                                type = "button" 
+                                                onClick="modal('ButModal-{{action.name}}', {
+                                                'title': '{{action.name}}',
+                                                'description': '{{action.description}}',
+                                                'start_date': '{{action.start_date}}',
+                                                'end_date': '{{action.end_date}}',
+                                                'responsible': '{{action.responsible}}',
+                                                'requisites': '{{action.prerequisites}}'
+                                                })">
+                                                <div class="image-container">
+                                                    {% with 'img/action_icons/'|add:action.icon as icon_path %}
+                                                        <img id="{{action.name}}" src="{% static icon_path %}" alt="representação de {{action.icon}}" class="action-image" >
+                                                    {% endwith %}
+                                                </div>
+                                                <div class="title-container">
+                                                    <p class="action-title">{{action.name}}</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                                {% else %}
+                                <div class="empty-category">
+                                    <h4 class="empty-category-warning">Desculpe, não temos nenhuma ação ocorrendo nessa categoria no momento.</h4>
+                                </div>
+                                {% endif %}
                         </div>
                     </div>
                 </div>

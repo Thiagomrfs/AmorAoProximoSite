@@ -27,22 +27,30 @@ params = {
 
 $(document).ready(function() {
     let slider = $("#lightSlider1").lightSlider(params);
-    sliders.push(slider);
+    if (slider.length !== 0) {
+        sliders.push(slider);
+    }
 });
 
 $(document).ready(function() {
     let slider = $("#lightSlider2").lightSlider(params);
-    sliders.push(slider) 
+    if (slider.length !== 0) {
+        sliders.push(slider);
+    }
 });
 
 $(document).ready(function() {
     let slider = $("#lightSlider3").lightSlider(params);
-    sliders.push(slider) 
+    if (slider.length !== 0) {
+        sliders.push(slider);
+    }
 });
 
 $(document).ready(function() {
     let slider = $("#lightSlider4").lightSlider(params);
-    sliders.push(slider) 
+    if (slider.length !== 0) {
+        sliders.push(slider);
+    }
 });
 
 
