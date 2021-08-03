@@ -3,21 +3,23 @@
     position: fixed;            /* Positioning */
     z-index: 9;
     padding-top: 5rem;         /* Padding */
+    padding-bottom: 5rem;         /* Padding */
     top: 0;                     /* Cover Top */
     left: 0;
     width: 100vw;                /* Cover all page */
     height: 100vh;
     background-color: rgba(0,0,0,0.5); /* Reduce page brigthness */
+    overflow-y: scroll;
 }
 
 .modal-content {
-    background-color: #ffffff;  /* Modal background */
+    background-color: var(--app-white);  /* Modal background */
     margin: auto;           /* Margin */
     padding: 20px;          /* Padding */
     border: 1px solid #888; /* Fade in border */
-    width: 50%;             /* Modal Width */
+    width: 80%;             /* Modal Width */
     border-radius: 1rem;
-    }
+}
 
 .close-modal {    /* Close X */
     color: #aaaaaa;        
@@ -27,37 +29,36 @@
 
 .close-modal:hover,
 .close-modal:focus {   /* Highligth the X */
-    color: #000;
+    color: var(--app-black);
     text-decoration: none;
     cursor: pointer;
-    }
+}
 
 .button{
-
-    background-color: red;
+    background-color: var(--secondary);
     border: none;
     color: white;
-    padding: 5rem 12rem;
     text-align: right;
     text-decoration: none;
-    display: block;
     font-size: medium;
     border-radius: 1rem;
-    float: right;
 
+    width: 12rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .button:hover{
-
-    background-color: darkred;
-
+    background-color: var(--secondary-hover);
+    cursor: pointer;
 }
 
 .button:active{
-
     background-color: red;
     box-shadow: 5rem #666;
     transform: translateY(4px);
-
 }
 
 .flavor-text, .modal-action-start, .modal-action-end, .modal-action-responsible, .modal-action-requisites{

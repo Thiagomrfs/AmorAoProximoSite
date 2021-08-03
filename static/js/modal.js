@@ -1,5 +1,7 @@
 function modal (caller, details){
 
+    let body = document.querySelector('body');
+    body.style.overflow = "hidden";
     let modal = document.getElementById('action-modal'); 
     let closebtn = modal.firstElementChild.querySelector('.close-modal');
     let callerElement = document.getElementById(caller); 
@@ -12,12 +14,14 @@ function modal (caller, details){
     // Close the Modal
     closebtn.onclick = function() {
         modal.style.display = "none";
+        body.style.overflowY = "hidden";
     }
 
     // Close if clicked elsewhere
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
+            body.style.overflowY = "hidden";
         }
     }
 
