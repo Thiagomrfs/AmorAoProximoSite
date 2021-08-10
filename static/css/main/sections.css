@@ -223,6 +223,7 @@
     height: 60%;
     grid-column: 1;
     grid-row: 1;
+    transition: clip-path 2s ease;
 }
 
 #donations .infographic-container .inf-right .inf-cont #inf-full,
@@ -232,7 +233,7 @@
 }
 
 #donations .infographic-container .inf-right .inf-cont #inf-full {
-    clip-path: inset(100% 100% 100% 100%);
+    clip-path: inset(100% 0 0 0);
 }
 
 #actions {
