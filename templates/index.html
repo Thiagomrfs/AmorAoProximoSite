@@ -49,7 +49,35 @@
                 </p>
             </div>
         </section>
-        <section id="donations">       
+        <section id="donations">
+            <div class="infographic-container">
+                <div class="inf-left">
+                    <div class="title">
+                        <h3>Sua doação é mais importante do que você imagina!</h3>
+                        <span>Veja com essa simulação o impacto da sua doação em produtos de cesta básica.</span>
+                    </div>
+                    <div class="donation">
+                        <span>Quanto você gostaria de doar?</span>
+                        <div class="input-group">
+                            <span>R$</span>
+                            <input type="number" min="0.05" step="0.05" class="donation-indicator"/>
+                        </div>
+                        <button onclick="updateInfographic()">Simular</button>
+                    </div>
+                    <div class="note">
+                        <span>Uma cesta fornecida pelo instituto consegue alimentar uma família de aproximadamente 5 pessoas por 14 dias.</span>
+                    </div>
+                </div>
+                <div class="inf-right">
+                    <div class="inf-cont">
+                        <img src="{% static 'img/infographic/info_emptya.png' %}" alt="infográfico vazio" id="inf-emp">
+                        <img src="{% static 'img/infographic/info_fulla.png' %}" alt="infográfico cheio" id="inf-full">
+                    </div>
+                </div>
+            </div>    
+            <div class="ong-infos">
+
+            </div>
         </section>
         <section id="actions">
             <h3>Ações que realizamos</h3>
@@ -323,4 +351,5 @@
 
 {% block scripts %}
 <script src= {% static "js/modal.js" %}> </script>
+<script src= {% static "js/infographic.js" %}> </script>
 {% endblock scripts %}
