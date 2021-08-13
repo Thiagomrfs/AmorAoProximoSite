@@ -5,6 +5,7 @@
 
     --app-white: #edf0f1;
     --app-black: #333333;
+    --app-light-gray: #eeeded;
 
     --background-one: #F2E6D8;
     --background-two: #FFF5D9;
@@ -14,6 +15,7 @@
     --secondary: #E83E32;
     --secondary-hover: #BF3329;
     --text-black: #333333;
+    --text-gray: rgb(80, 80, 80);
 }
 
 * {
@@ -50,4 +52,15 @@ footer img {
     width: 100%;
     max-width: 100%;
     height: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
