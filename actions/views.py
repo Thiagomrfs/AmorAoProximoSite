@@ -1,3 +1,4 @@
+from django import template
 from django.http.response import HttpResponse
 from django.template import loader
 from actions.models import Action
@@ -20,5 +21,12 @@ def index(request):
         "food": food,
         "updates": updates[:5]
     }
+
+    return HttpResponse(template.render(context, request))
+
+def formulario(request):
+    template = loader.get_template('formulario.html')
+
+    context = {}
 
     return HttpResponse(template.render(context, request))

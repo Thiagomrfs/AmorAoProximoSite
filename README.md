@@ -4,7 +4,7 @@ Uma aplicação web desenvolvida para a instituição Amor ao Próximo durante a
   
   
 ## Tabela de items
-    1. Equipe - CJ3-T  
+    1. Equipe - C-J3T  
     2. Sobre a aplicação
     3. Requisitos funcionais 
         3.1. RF0001: Realizar pagamento  
