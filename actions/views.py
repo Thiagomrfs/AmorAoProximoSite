@@ -24,8 +24,8 @@ def index(request):
 
     return HttpResponse(template.render(context, request))
 
-def formulario(request):
-    template = loader.get_template('formulario.html')
+def formvol(request):
+    template = loader.get_template('formvol.html')
 
     context = {}
 

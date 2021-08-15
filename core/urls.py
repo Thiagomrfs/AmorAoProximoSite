@@ -7,7 +7,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('actions.urls')),
-    path('formulario', views.formulario, name="formulario")
+    path('formvol', views.formvol, name="formvol")
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
