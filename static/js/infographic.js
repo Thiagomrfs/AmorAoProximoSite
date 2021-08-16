@@ -1,5 +1,10 @@
 function updateInfographic() {
     let value = parseFloat(document.querySelector(".donation-indicator").value).toFixed(2);
+
+    if (isNaN(value)){
+        return
+    }
+
     let desc = document.querySelector("#inf-description");
     let totalPrice = 30;
 
