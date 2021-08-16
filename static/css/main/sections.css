@@ -160,6 +160,7 @@
 #donations .infographic-container .inf-left .input-group {
     background-color: var(--app-light-gray);
     height: 2.5rem;
+    width: 98%;
     margin: 0.5rem 0;
     border-radius: 0.5rem;
     display: flex;
@@ -193,6 +194,7 @@
     border: 0;
 
     height: 2rem;
+    width: 98%;
     border-radius: 0.5rem;
 
     transition: 300ms;
@@ -233,6 +235,19 @@
 
 #donations .infographic-container .inf-right .inf-cont #inf-full {
     clip-path: inset(100% 0 0 0);
+}
+
+#donations .infographic-container .inf-right #inf-description {
+    margin-top: 77.5%;
+    text-align: center;
+    color: var(--text-gray);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+#donations .infographic-container .inf-right #inf-description b {
+    color: var(--text-black);
+    font-weight: 700;
 }
 
 #actions {
