@@ -12,8 +12,8 @@ function updateInfographic() {
     if (value > 30)
     {
         let quantity = value/30
-        desc.innerHTML = `Com a sua doação conseguimos arrecadar<br />cerca de <b>${quantity.toFixed(0)}</b> cestas básicas!`
+        desc.innerHTML = `Com a sua doação conseguiremos arrecadar<br />cerca de <b>${quantity.toFixed(0)}</b> cestas básicas!`
     }
     else
-        desc.innerHTML = `Com a sua doação conseguimos o equivalente<br/>a <b>${percentage.toFixed(0)}%</b> de uma cesta básica!`
+        desc.innerHTML = `Com a sua doação conseguiremos o equivalente<br/>a <b>${percentage.toFixed(0)}%</b> de uma cesta básica!`
 }

@@ -16,7 +16,7 @@ header {
 }
 
 nav {
-    padding-left: 18vw;
+    padding-left: 15vw;
 }
 
 #logo-container {
@@ -43,7 +43,6 @@ nav {
 
 .nav-items li {
     display: inline-block;
-    padding: 0 20px;
     border-right: 1px solid var(--text-black);
     padding: 0 3rem;
 }
@@ -52,6 +51,7 @@ nav {
     transition: all 0.3s ease 0s;
     color: var(--text-black);
     font-weight: 600;
+    font-size: 1.15rem;
 }
 
 .nav-items li a:hover {

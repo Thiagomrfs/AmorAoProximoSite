@@ -428,57 +428,69 @@
     margin-bottom: 1.3rem;
 }
 
-#volunteer .volunteer-call {
+#volunteer .volunteer-container {
+    width: 95%;
+    height: 80%;
     display: flex;
     flex-direction: column;
-    width: max-content;
 }
 
-#volunteer .volunteer-profiles {
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(4, 12rem);
-    gap: 1rem;
-    margin-bottom: 2rem;
+#volunteer .volunteer-container .volunteer-profiles {
+    background: var(--background-one);
+    display: flex;
+    height: 45%;
+    width: 100%;
+    border-radius: 1rem;
+    align-items: center;
 }
 
-#volunteer .volunteer-card {
-    background-color: var(--primary);
-    border-radius: 0.8rem;
-    width: 12rem;
-    height: 10rem;
+#volunteer .volunteer-container .volunteer-profiles .profile-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border-right: 1px solid var(--background-two);
+    padding: 0 3rem;
+    border-width: 0.2rem;
+    height: 80%;
+    justify-content: space-around;
+}
+
+#volunteer .volunteer-container .volunteer-profiles .profile-container:last-child {
+    border-right:0;
+}
+
+#volunteer .volunteer-container .volunteer-profiles .profile-container .volunteer-card:last-child {
+    margin-top: 2.5rem;
+}
+
+#volunteer .volunteer-container .volunteer-profiles .volunteer-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
-#volunteer .volunteer-card img {
-    width: 60%;
-    height: 60%;
-    margin-bottom: 0.5rem;
-}
-
-#volunteer .volunteer-card p {
-    color: var(--app-white);
+#volunteer .volunteer-container .volunteer-profiles .volunteer-card p {
+    color: var(--primary);
+    font-weight: 600;
+    margin-top: 0.5rem;
     text-align: center;
-    font-size: 0.9rem;
-    font-weight: 500;
 }
 
-#volunteer button {
-    width: 15rem;
+#volunteer .volunteer-container a {
+    margin-top: 2.5rem;
+    background: var(--secondary);
+    align-self: center;
     height: 4rem;
-    border: none;
+    width: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5rem;
+
     font-size: 1.2rem;
-    font-weight: 400;
-    background-color: var(--secondary);
-    border-radius: 1rem;
-    align-self: flex-end;
     transition: 300ms;
 }
 
-#volunteer button:hover {
-    background-color: var(--secondary-hover);
-    cursor: pointer;
+#volunteer .volunteer-container a:hover {
+    background: var(--secondary-hover);
 }
