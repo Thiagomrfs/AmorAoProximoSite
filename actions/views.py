@@ -1,3 +1,4 @@
+from django import template
 from django.http.response import HttpResponse
 from django.template import loader
 from actions.models import Action
@@ -20,5 +21,12 @@ def index(request):
         "food": food,
         "updates": updates[:5]
     }
+
+    return HttpResponse(template.render(context, request))
+
+def formvol(request):
+    template = loader.get_template('formvol.html')
+
+    context = {}
 
     return HttpResponse(template.render(context, request))
