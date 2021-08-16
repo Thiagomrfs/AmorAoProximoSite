@@ -19,7 +19,7 @@ Uma aplicação web desenvolvida para a instituição Amor ao Próximo durante a
         3.2. Como iniciar o servidor
 
 
-## 1. Equipe - CJ3-T
+## 1. Equipe - C-J3T
 - Caio Vinicius
 - Thiago Marinho
 - João Lucas
@@ -29,7 +29,7 @@ Uma aplicação web desenvolvida para a instituição Amor ao Próximo durante a
 ## 2. Sobre a aplicação
 Essa é uma aplicação web desenvolvida durante a disciplina de Projeto Integrado I, componente curricular do terceiro semestre do curso de Sistemas e Mídias Digitais da Universidade Federal do Ceará. 
 
-A equipe CJ3-T, juntamente com a [Instituição Amor Ao Próximo](https://www.instagram.com/oficialamoraoproximo/), desenvolveu essa aplicação web com o intuito de dar visibilidade para a instituição e incentivar doações, assim como agregar as ações que a instituição realiza como também novidades sobre a Amor Ao Próximo no geral.
+A equipe C-J3T, juntamente com a [Instituição Amor Ao Próximo](https://www.instagram.com/oficialamoraoproximo/), desenvolveu essa aplicação web com o intuito de dar visibilidade para a instituição e incentivar doações, assim como agregar as ações que a instituição realiza como também novidades sobre a Amor Ao Próximo no geral.
 
 A apicação consiste de um website que conta com um infográfico interativo, no qual o usuário pode inserir um valor para simular o impacto que a sua doação fará para pessoas necessitadas através de uma representação de uma cesta básica que se preencherá de acordo com o valor fornecido.
 
