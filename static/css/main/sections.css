@@ -109,7 +109,7 @@
 #donations {
     background-color: var(--background-one);
     width: 100vw;
-    height: 200vh;
+    height: 300vh;
     padding-top: 5rem;
     display: flex;
     flex-direction: column;
@@ -119,7 +119,7 @@
 #donations .infographic-container {
     background-color: rgb(252, 252, 252);
     width: 90%;
-    height: 50%;
+    height: 35%;
     border-radius: 1rem;
     padding: 1.5rem 3rem;
     display: flex;
@@ -211,6 +211,8 @@
 
 #donations .infographic-container .inf-right {
     flex: 1;
+    display: flex;
+    width: 100%;
 }
 
 #donations .infographic-container .inf-right .inf-cont {
@@ -222,6 +224,7 @@
     margin-left: 2rem;
     width: 60%;
     height: 60%;
+    max-width: 100%;
     grid-column: 1;
     grid-row: 1;
     transition: clip-path 2s ease;
@@ -238,16 +241,76 @@
 }
 
 #donations .infographic-container .inf-right #inf-description {
-    margin-top: 77.5%;
-    text-align: center;
+    text-align: left;
+    width: 100%;
     color: var(--text-gray);
     font-weight: 500;
     font-size: 1.1rem;
+    align-self: flex-end;
+    justify-self: center;
+    margin-bottom: 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#donations .infographic-container .inf-right #inf-description .inf-quantity-indicator {
+    color: var(--secondary);
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-right: 0.5rem;
 }
 
 #donations .infographic-container .inf-right #inf-description b {
-    color: var(--text-black);
+    color: var(--secondary);
     font-weight: 700;
+}
+
+#donations .ong-infos {
+    background: var(--background-two);
+    padding: 2.5rem;
+    margin-top: 2rem;
+    border-radius: 1.2rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+#donations .ong-infos h2 {
+    color: var(--secondary);
+    font-size: 1.7rem;
+    font-weight: 700;
+    align-self: center;
+}
+
+#donations .fast-donations {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+#donations .fast-donations .pix-donation,
+#donations .fast-donations .picpay-donation {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--text-black);
+}
+
+#donations .fast-donations .pix-donation h4,
+#donations .fast-donations .picpay-donation h4 {
+    color: var(--secondary);
+    margin: 0.8rem 0;
+    font-weight: 600;
+}
+
+#donations .fast-donations .picpay-donation span {
+    color: var(--secondary);
+    margin-top: 0.25rem;
 }
 
 #actions {

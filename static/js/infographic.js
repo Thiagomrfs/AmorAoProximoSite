@@ -10,6 +10,8 @@ function updateInfographic() {
 
     let percentage = 100*value / totalPrice;
 
+    if (percentage > 100) percentage = 100;
+
     let info = document.querySelector("#inf-full");
 
     info.style.clipPath = `inset(${100 - percentage}% 0px 0px 0px)`;
@@ -17,8 +19,25 @@ function updateInfographic() {
     if (value > 30)
     {
         let quantity = value/30
-        desc.innerHTML = `Com a sua doação conseguiremos arrecadar<br />cerca de <b>${quantity.toFixed(0)}</b> cestas básicas!`
+        desc.innerHTML = `
+        <div class="inf-quantity-indicator">
+            <p>${quantity.toFixed(0)}</p>
+        </div>
+        <div class="inf-support-text">
+            <p>
+                cestas básicas serão arrecadadas com a sua<br/> doação,
+                impactando a vida de <b>${quantity.toFixed(0)*5} pessoas</b>!
+            </p>
+        </div>
+        `
     }
     else
-        desc.innerHTML = `Com a sua doação conseguiremos o equivalente<br/>a <b>${percentage.toFixed(0)}%</b> de uma cesta básica!`
+    {
+        desc.innerHTML = `
+        <p>
+            Com a sua doação conseguiremos o equivalente<br/>
+            a <b>${percentage.toFixed(0)}%</b> de uma cesta básica!
+        </p>
+        `
+    }
 }
