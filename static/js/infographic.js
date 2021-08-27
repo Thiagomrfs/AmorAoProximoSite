@@ -34,10 +34,14 @@ function updateInfographic() {
     else
     {
         desc.innerHTML = `
-        <p>
-            Com a sua doação conseguiremos o equivalente<br/>
-            a <b>${percentage.toFixed(0)}%</b> de uma cesta básica!
-        </p>
+        <div class="inf-quantity-indicator">
+            <p>${percentage.toFixed(0)}%</p>
+        </div>
+        <div class="inf-support-text">
+            <p>
+                de uma cesta básica poderão ser arrecadados com a sua doação. De pouquinho em pouquinho fazemos a diferença!
+            </p>
+        </div>
         `
     }
 }

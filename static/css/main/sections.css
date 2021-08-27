@@ -313,6 +313,31 @@
     margin-top: 0.25rem;
 }
 
+#donations .other-donations .bank-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 ;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+#donations .other-donations .bank-info h3 {
+    color: var(--secondary);
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+}
+
+#donations .phys-donations {
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+#donations .phys-donations p b{
+    color: var(--secondary);
+    font-weight: 600;
+}
+
 #actions {
     background-color: var(--background-two);
     width: 100vw;
