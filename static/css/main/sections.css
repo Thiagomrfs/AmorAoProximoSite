@@ -109,7 +109,7 @@
 #donations {
     background-color: var(--background-one);
     width: 100vw;
-    height: 300vh;
+    height: 260vh;
     padding-top: 5rem;
     display: flex;
     flex-direction: column;
@@ -330,7 +330,7 @@
 #donations .phys-donations {
     padding: 0 2rem;
     margin-bottom: 3rem;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
 }
 
 #donations .phys-donations p b{
