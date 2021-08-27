@@ -220,7 +220,7 @@
 }
 
 #donations .infographic-container .inf-right .inf-cont img {
-    margin-top: 4rem;
+    margin-top: 6rem;
     margin-left: 2rem;
     width: 60%;
     height: 60%;
@@ -248,7 +248,7 @@
     font-size: 1.1rem;
     align-self: flex-end;
     justify-self: center;
-    margin-bottom: 7%;
+    margin-bottom: 8.5%;
 
     display: flex;
     align-items: center;
