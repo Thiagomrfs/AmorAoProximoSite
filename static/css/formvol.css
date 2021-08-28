@@ -1,7 +1,7 @@
 #form-landing {
     background-color: var(--background-one);
     width: 100vw;
-    height: 350vh;
+    height: 300vh;
     display: flex;
 }
 
@@ -84,6 +84,16 @@
     width: 30vw;
     padding: 00.3rem;
     border-radius: 00.3rem;
+    box-shadow: 0 0 3px var(--text-gray);
+    border: 0rem;
+}
+
+#form-landing .form-body input[type="date"]{
+    width: 15vw;
+    padding: 00.3rem;
+    border-radius: 00.3rem;
+    box-shadow: 0 0 3px var(--text-gray);
+    border: 0rem;
 }
 
 #form-landing .form-body .check input[type="checkbox"] {
@@ -118,4 +128,26 @@
     border-bottom: solid;
     background-color: transparent;
     outline: none;
+}
+
+#form-landing .form-body input[type="submit"]{
+    background-color: var(--secondary);
+    border: none;
+    color: white;
+    padding: 2rem 2rem;
+    text-align: right;
+    text-decoration: none;
+    display: block;
+    font-size: 100%;
+    font-weight: 600;
+    border-radius: 1rem;
+    float: left;
+    box-shadow: -4px 5px 4px rgba(63, 32, 32, 0.25);
+    width: 12rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.2rem;
+
 }

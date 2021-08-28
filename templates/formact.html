@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% load static %}
+{% load remove_enters %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/main/sections.css' %}">
+<link rel="stylesheet" href="{% static 'css/main/actionCard.css' %}">
+<link rel="stylesheet" href="{% static 'css/formact.css' %}">
+{% endblock styles %}
+
+{% block content %}
+    <div class="container">
+        <section id="form-landing">
+            <div class="form-content">
+                <form target="_blank" action="https://formsubmit.co/cevef60406@5sword.com" method="POST">
+                    <input type="hidden" name="_subject" value="Formulário de Ação">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="box">
+                    <input type="hidden" name="_next" value="/feedback">
+                    <div class="form-body">
+                        <h1>
+                            Matricule-se e participe dessa ação!
+                        </h1> 
+                        
+                        <h4>
+                            Nome Completo:
+                            <form class="form-input">
+                                <input type="text" name="Nome" placeholder="Nome Completo" required/>
+                            </form>
+                        </h4>
+
+                        <h4>
+                            Data de Nascimento:
+                            <form class="form-input">
+                                <input type="date" name="Nascimento"/>
+                            </form>
+                        </h4>
+
+                        <h4>
+                            Telefone celular:
+                            <form class="form-input">
+                                <input type="tel" pattern="[0-9]{11}" name="Telefone"/>
+                            </form>
+                        </h4>
+
+                        <h4>
+                            Em qual bairro você mora?
+                            <form class="form-input">
+                                <input type="text" name="Bairro" placeholder="Quintino Cunha" required/>
+                            </form>
+                        </h4>
+
+                        <h4>
+                            Informações adicionais (opcional):
+                            <form class="form-input">
+                                <input type="text" name="Informacoes">
+                            </form>
+                        </h4>
+
+    
+                            
+    
+                                
+                                <button type="submit" class="submit" style="background-color: var(--secondary);
+                                border: none;
+                                color: white;
+                                padding: 2rem 2rem;
+                                text-align: right;
+                                text-decoration: none;
+                                display: block;
+                                font-size: 100%;
+                                font-weight: 600;
+                                border-radius: 1rem;
+                                float: left;
+                                box-shadow: -4px 5px 4px rgba(63, 32, 32, 0.25);
+                                
+                            
+                            
+                                width: 12rem;
+                                height: 2.5rem;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin-top: 1.2rem;">Enviar</button>
+                                
+    
+                        
+
+                        
+                        
+                        
+    
+    
+    
+                    
+    
+                    </div>        
+                </form>
+
+            </div>
+             
+    
+            
+        
+            <img src="{% static 'img/action_castle.png' %}" alt="Castelo" />
+        </section>
+    </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock content %}
+
+{% block scripts %}
+{% endblock scripts %}

@@ -1,0 +1,59 @@
+#feedback-landing {
+    background-color: var(--background-two);
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+}
+
+#feedback-landing .feedback-content {
+    display: block;
+    width: 45%;
+    align-items: center ;
+    justify-content: center;
+    padding: 7rem;
+    width: 100vw;
+    text-align: center;
+}
+
+.fdb h1{
+    font-size: 2.5rem;
+    color: var(--secondary);
+    font-weight: bolder;
+}
+
+.fdb h3{
+    font-size: 1.5rem;
+    color: var(--app-black);
+    font-weight: bolder;   
+    padding-top: 1rem;
+    padding-bottom: 0.1rem;
+    text-align: center;
+}
+
+.redirect{
+    background-color: var(--secondary);
+    border: none;
+    color: white;
+
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 100%;
+    font-weight: 600;
+    border-radius: 1rem;
+    float: center;
+    box-shadow: -4px 5px 4px rgba(63, 32, 32, 0.25);
+    width: 12rem;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2rem;
+    padding-top: 2rem 2rem;
+
+
+}
+
+.redirect:hover{
+    cursor: pointer;
+}
