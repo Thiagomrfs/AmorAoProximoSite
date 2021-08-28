@@ -330,10 +330,12 @@
             <div class="updates-container">
                 {% for update in updates %}
                 <div class="update-card">
+                    <div class="update-img">
+                        <img src="{{ update.imagem.url }}" alt="Update">
+                    </div>
                     <div class="update-title">
                         <p>{{update.titulo}}</p>
                     </div>
-                    <img src="{{ update.imagem.url }}" alt="Update">
                 </div>
                 {% endfor %}
             </div>

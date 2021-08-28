@@ -220,7 +220,7 @@
 }
 
 #donations .infographic-container .inf-right .inf-cont img {
-    margin-top: 6rem;
+    margin-top: 2rem;
     margin-left: 2rem;
     width: 60%;
     height: 60%;
@@ -248,7 +248,7 @@
     font-size: 1.1rem;
     align-self: flex-end;
     justify-self: center;
-    margin-bottom: 8.5%;
+    margin-bottom: 6%;
 
     display: flex;
     align-items: center;
@@ -454,6 +454,43 @@
 
 #updates .updates-container .update-card {
     width: 14rem;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    box-shadow: -4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+}
+
+#updates .updates-container .update-card .update-img {
+    width: 100%;
+    height: 70%;
+    border-radius: 1rem 1rem 0 0;
+    overflow: hidden;
+    background: var(--secondary);
+}
+
+#updates .updates-container .update-card .update-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#updates .updates-container .update-card .update-title {
+    width: 100%;
+    height: 30%;
+    background: var(--secondary);
+    border-radius: 0 0 1rem 1rem;
+    color: var(--app-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* #updates .updates-container .update-card {
+    width: 14rem;
     height: 16.5rem;
     background-color: var(--secondary);
     box-shadow: -4px 5px 4px rgba(0, 0, 0, 0.25);
@@ -485,7 +522,7 @@
     height: 70%;
     border-radius: 1.5rem;
     object-fit: cover;
-}
+} */
 
 #volunteer {
     background-color: var(--background-two);
