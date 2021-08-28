@@ -30,3 +30,17 @@ def formvol(request):
     context = {}
 
     return HttpResponse(template.render(context, request))
+
+def formact(request):
+    template = loader.get_template('formact.html')
+
+    context = {}
+
+    return HttpResponse(template.render(context, request))
+
+def feedback(request):
+    template = loader.get_template('feedback.html')
+
+    context = {}
+
+    return HttpResponse(template.render(context, request))

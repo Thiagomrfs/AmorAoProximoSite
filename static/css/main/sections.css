@@ -57,18 +57,22 @@
 }
 
 #history {
-    background-color: var(--background-two);
+    
     width: 100vw;
     height: 100vh;
     display: flex;
+    
+    scroll-snap-type: x mandatory; 
     padding-top: 1.5rem;
-    overflow: hidden;
+    -webkit-overflow-scrolling: x mandatory;
 }
 
+
+
 #history .history-left {
-    width: 55%;
+    width: 55vw;
     height: 100%;
-    display: flex;
+    display: inline-block;
     flex-direction: column;
 }
 
@@ -92,6 +96,7 @@
     flex:1;
     height: 100%;
     padding: 2rem;
+    display: inline-block;
 }
 
 #history .history-right h4 {
