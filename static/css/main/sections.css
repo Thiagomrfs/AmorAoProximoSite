@@ -114,7 +114,7 @@
 #donations {
     background-color: var(--background-one);
     width: 100vw;
-    height: 200vh;
+    height: 260vh;
     padding-top: 5rem;
     display: flex;
     flex-direction: column;
@@ -124,7 +124,7 @@
 #donations .infographic-container {
     background-color: rgb(252, 252, 252);
     width: 90%;
-    height: 50%;
+    height: 35%;
     border-radius: 1rem;
     padding: 1.5rem 3rem;
     display: flex;
@@ -165,6 +165,7 @@
 #donations .infographic-container .inf-left .input-group {
     background-color: var(--app-light-gray);
     height: 2.5rem;
+    width: 98%;
     margin: 0.5rem 0;
     border-radius: 0.5rem;
     display: flex;
@@ -198,6 +199,7 @@
     border: 0;
 
     height: 2rem;
+    width: 98%;
     border-radius: 0.5rem;
 
     transition: 300ms;
@@ -214,6 +216,8 @@
 
 #donations .infographic-container .inf-right {
     flex: 1;
+    display: flex;
+    width: 100%;
 }
 
 #donations .infographic-container .inf-right .inf-cont {
@@ -221,10 +225,11 @@
 }
 
 #donations .infographic-container .inf-right .inf-cont img {
-    margin-top: 4rem;
+    margin-top: 6rem;
     margin-left: 2rem;
     width: 60%;
     height: 60%;
+    max-width: 100%;
     grid-column: 1;
     grid-row: 1;
     transition: clip-path 2s ease;
@@ -238,6 +243,104 @@
 
 #donations .infographic-container .inf-right .inf-cont #inf-full {
     clip-path: inset(100% 0 0 0);
+}
+
+#donations .infographic-container .inf-right #inf-description {
+    text-align: left;
+    width: 100%;
+    color: var(--text-gray);
+    font-weight: 500;
+    font-size: 1.1rem;
+    align-self: flex-end;
+    justify-self: center;
+    margin-bottom: 8.5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#donations .infographic-container .inf-right #inf-description .inf-quantity-indicator {
+    color: var(--secondary);
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-right: 0.5rem;
+}
+
+#donations .infographic-container .inf-right #inf-description b {
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+#donations .ong-infos {
+    background: var(--background-two);
+    padding: 2.5rem;
+    margin-top: 2rem;
+    border-radius: 1.2rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+#donations .ong-infos h2 {
+    color: var(--secondary);
+    font-size: 1.7rem;
+    font-weight: 700;
+    align-self: center;
+}
+
+#donations .fast-donations {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+#donations .fast-donations .pix-donation,
+#donations .fast-donations .picpay-donation {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--text-black);
+}
+
+#donations .fast-donations .pix-donation h4,
+#donations .fast-donations .picpay-donation h4 {
+    color: var(--secondary);
+    margin: 0.8rem 0;
+    font-weight: 600;
+}
+
+#donations .fast-donations .picpay-donation span {
+    color: var(--secondary);
+    margin-top: 0.25rem;
+}
+
+#donations .other-donations .bank-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 ;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+#donations .other-donations .bank-info h3 {
+    color: var(--secondary);
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+}
+
+#donations .phys-donations {
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+    margin-top: 2.5rem;
+}
+
+#donations .phys-donations p b{
+    color: var(--secondary);
+    font-weight: 600;
 }
 
 #actions {
@@ -418,58 +521,70 @@
     margin-bottom: 1.3rem;
 }
 
-#volunteer .volunteer-call {
+#volunteer .volunteer-container {
+    width: 95%;
+    height: 80%;
     display: flex;
     flex-direction: column;
-    width: max-content;
 }
 
-#volunteer .volunteer-profiles {
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(4, 12rem);
-    gap: 1rem;
-    margin-bottom: 2rem;
+#volunteer .volunteer-container .volunteer-profiles {
+    background: var(--background-one);
+    display: flex;
+    height: 45%;
+    width: 100%;
+    border-radius: 1rem;
+    align-items: center;
 }
 
-#volunteer .volunteer-card {
-    background-color: var(--primary);
-    border-radius: 0.8rem;
-    width: 12rem;
-    height: 10rem;
+#volunteer .volunteer-container .volunteer-profiles .profile-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border-right: 1px solid var(--background-two);
+    padding: 0 3rem;
+    border-width: 0.2rem;
+    height: 80%;
+    justify-content: space-around;
+}
+
+#volunteer .volunteer-container .volunteer-profiles .profile-container:last-child {
+    border-right:0;
+}
+
+#volunteer .volunteer-container .volunteer-profiles .profile-container .volunteer-card:last-child {
+    margin-top: 2.5rem;
+}
+
+#volunteer .volunteer-container .volunteer-profiles .volunteer-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
-#volunteer .volunteer-card img {
-    width: 60%;
-    height: 60%;
-    margin-bottom: 0.5rem;
-}
-
-#volunteer .volunteer-card p {
-    color: var(--app-white);
+#volunteer .volunteer-container .volunteer-profiles .volunteer-card p {
+    color: var(--primary);
+    font-weight: 600;
+    margin-top: 0.5rem;
     text-align: center;
-    font-size: 0.9rem;
-    font-weight: 500;
 }
 
-#volunteer button {
-    width: 15rem;
+#volunteer .volunteer-container a {
+    margin-top: 2.5rem;
+    background: var(--secondary);
+    align-self: center;
     height: 4rem;
-    border: none;
-    font-size: 1.2rem;
-    font-weight: 400;
-    background-color: var(--secondary);
-    border-radius: 1rem;
-    align-self: flex-end;
-    transition: 300ms;
+    width: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5rem;
 
+    font-size: 1.2rem;
+    transition: 300ms;
+    box-shadow: -4px 5px 4px rgba(0, 0, 0, 0.25);
 }
 
-#volunteer button:hover {
-    background-color: var(--secondary-hover);
-    cursor: pointer;
+#volunteer .volunteer-container a:hover {
+    background: var(--secondary-hover);
 }

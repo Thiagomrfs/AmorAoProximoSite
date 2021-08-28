@@ -44,6 +44,7 @@ footer {
     z-index: 2;
     transform: translateY(-45%);
     display: flex;
+    overflow: hidden;
 }
 
 footer img {
@@ -52,6 +53,41 @@ footer img {
     width: 100%;
     max-width: 100%;
     height: 100%;
+}
+
+footer .footer-content {
+    position: absolute;
+    color: var(--app-white);
+    top: 40%;
+    width: 100%;
+    height: 55%;
+    padding: 1rem var(--section-left-margin);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .footer-content .ong-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer-content .ong-info p {
+    margin-bottom: 0.125rem;
+}
+
+footer .footer-content .cj3t-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: flex-end;
+}
+
+footer .footer-content .cj3t-container img{
+    width: 3rem;
+    height: auto;
+    align-self: center;
+    margin-bottom: 0.125rem;
 }
 
 input::-webkit-outer-spin-button,
