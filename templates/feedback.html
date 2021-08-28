@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+{% load remove_enters %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/main/sections.css' %}">
+<link rel="stylesheet" href="{% static 'css/main/actionCard.css' %}">
+<link rel="stylesheet" href="{% static 'css/feedback.css' %}">
+
+{% endblock styles %}
+
+{% block content %}
+    <div class="container">
+        <section id="feedback-landing">
+            <div class="feedback-content">
+                
+                <div class="fdb">
+                    <h1>
+                        Obrigado!
+                    </h1>
+                    <h3>
+                        Entraremos em contato.
+                    </h3>
+                    
+                    <form action="/">
+                    <button type="submit" class="redirect">Voltar ao Site</button>
+                    </form>
+
+                </div>
+                
+            </div>
+             
+        </section>
+    </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock content %}
+
+{% block scripts %}
+<script src= {% static "js/modal.js" %}> </script>
+{% endblock scripts %}

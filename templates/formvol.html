@@ -5,149 +5,315 @@
 {% block styles %}
 <link rel="stylesheet" href="{% static 'css/main/sections.css' %}">
 <link rel="stylesheet" href="{% static 'css/main/actionCard.css' %}">
-<link rel="stylesheet" href="{% static 'css/form.css' %}">
+<link rel="stylesheet" href="{% static 'css/formvol.css' %}">
 {% endblock styles %}
 
 {% block content %}
     <div class="container">
         <section id="form-landing">
             <div class="form-content">
-                <div class="form-body">
-                    <h1>
-                        Voluntarie-se:
-                    </h1>
-                    <h3>
-                        Olá! Esse é o formulário de inscrição de novos voluntários do Instituto Amor ao Próximo! Preencha as perguntas e em breve entraremos em contato. Venha fazer parte da nossa família!
-                    </h3>
-                    <h4>
-                        <p>Nome Completo:</p>
-                        <form class="form-input">
-                            <input type="text" />
-                        </form>
-                        
-                        <p>Data de nascimento:</p>
-                        <form class="form-input">
-                            <input type="date" />
-                        </form>
-                        
-                        <p>Em qual bairro você mora?</p>
-                        <form class="form-input">
-                            <input type="text" />
-                        </form>
-                        
-                        <p>Email:</p>
-                        <form class="form-input">
-                            <input type="email" />
-                        </form>
-                        
-                        <p>Como você conheceu o instituto?</p>
-                        <form class="form-input">
-                            <input type="text" />
-                        </form>
-                        
-                        <p>Deixe seu WhatsApp:</p>
-                        <form class="form-input">
-                            <input type="number" />
-                        </form>
+                <form target="_blank" action="https://formsubmit.co/cevef60406@5sword.com" method="POST">
+                    <input type="hidden" name="_subject" value="Formulário de Voluntário">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="box">
+                    <input type="hidden" name="_next" value="/feedback">
+                    <div class="form-body">
+                        <h1>
 
-                        <p>Qual sua disponibilidade nesses dias?</p>
-
-                        <table>
-                            <tr>
-                                <th>&nbsp</th>
-                                <th>Manhã</th>
-                                <th>Tarde</th>
-                                <th>Noite</th>
-                            </tr>
-                            <tr>
-                                <td class>Segunda-Feira</td>
-                                <td><input type="checkbox"/> &nbsp </td>
-                                <td><input type="checkbox"/> &nbsp </td>
-                                <td><input type="checkbox"/> &nbsp </td>                                
-                            </tr>
-
-                            <tr>
-                                <td>Terça-Feira</td>
-                                <td><input type="checkbox"/> &nbsp </td>
-                                <td><input type="checkbox"/> &nbsp </td>
-                                <td><input type="checkbox"/> &nbsp </td>                                
-                            </tr>
-
-                            <tr>
-                                <td>Quarta-Feira</td>
-                                <td><input type="checkbox"/> &nbsp </td>
-                                <td><input type="checkbox"/> &nbsp </td>
-                                <td><input type="checkbox"/> &nbsp </td>                                
-                            </tr>
-
-                            <tr>
-                                <td>Quinta-Feira</td>
-                                <td><input type="checkbox"/> &nbsp </td>
-                                <td><input type="checkbox"/> &nbsp </td>
-                                <td><input type="checkbox"/> &nbsp </td>                                
-                            </tr>
-
-                            <tr>
-                                <td>Sexta-Feira</td>
-                                <td><input type="checkbox"/> &nbsp </td>
-                                <td><input type="checkbox"/> &nbsp </td>
-                                <td><input type="checkbox"/> &nbsp </td>                                
-                            </tr>
-
-                            <tr>
-                                <td>Sábado</td>
-                                <td><input type="checkbox"/> &nbsp </td>
-                                <td><input type="checkbox"/> &nbsp </td>
-                                <td><input type="checkbox"/> &nbsp </td>                                
-                            </tr>
-
-                            <tr>
-                                <td>Domingo</td>
-                                <td><input type="checkbox"/> &nbsp </td>
-                                <td><input type="checkbox"/> &nbsp </td>
-                                <td><input type="checkbox"/> &nbsp </td>                                
-                            </tr>
-                        </table>
-
-                        
-
-
-                        <p>Já teve experiência em trabalho voluntário?</p>
-                        <fieldset>
-                            <input type="checkbox" name="exp" value="sim">Sim<br>
-                            <input type="checkbox" name="exp" value="nao">Não<br>
-                        </fieldset>
-
-                        <p>Se sim, qual experiência?</p>
-                        <form class="form-input">
-                            <input type="text">
-                        </form>
-                        
-                        <p>Em quais áreas do nosso instituto você se identifica?</p>
-                        
-                        <form>
-                            <fieldset>
-                                <input type="checkbox" name="area" value="Trabalho de Rua">Trabalho de Rua<br>
-                                <input type="checkbox" name="area" value="Design Gráfico">Design Gráfico<br>
-                                <input type="checkbox" name="area" value="Fotografia/Videomaker">Fotografia/Videomaker<br>
-                                <input type="checkbox" name="area" value="Psicologia">Psicologia<br>
-                                <input type="checkbox" name="area" value="Pedagogia">Pedagogia<br>
-                                <input type="checkbox" name="area" value="Administração e comunicação">Administração e comunicação<br>
-                                <input type="checkbox" name="area" value="Assistência social">Assistência social<br>
-                                <input type="checkbox" name="area" value="Professores">Professores<br>
-                                <input type="checkbox" name="area" value="Outros">Outros:<br>
+                            Voluntarie-se:
+    
+                        </h1>
+    
+                        <h3>
+    
+                            Olá! Esse é o formulário de inscrição de novos voluntários do Instituto Amor ao Próximo! Preencha as perguntas e em breve entraremos em contato. Venha fazer parte da nossa família!
+    
+                        </h3>
+    
+                        <h4>
+    
+                            <p>Nome Completo:</p>
+    
+                            <form class="form-input">
+    
+                                <input type="text" name="Nome" placeholder="Nome Completo" required/>
+    
+                            </form>
+    
+                            
+    
+                            <p>Data de nascimento:</p>
+    
+                            <form class="form-input">
+    
+                                <input type="date" name="Nascimento" required/>
+    
+                            </form>
+    
+                            
+    
+                            <p>Em qual bairro você mora?</p>
+    
+                            <form class="form-input">
+    
+                                <input type="text" name="Bairro" placeholder="Quintino Cunha" required/>
+    
+                            </form>
+    
+                            
+    
+                            <p>Email:</p>
+    
+                            <form class="form-input">
+    
+                                <input type="email" name="Email" placeholder="endereço@deemail.com" required/>
+    
+                            </form>
+    
+                            
+    
+                            <p>Como você conheceu o instituto?</p>
+    
+                            <form class="form-input">
+    
+                                <input type="text" name="Como conheceu" required/>
+    
+                            </form>
+    
+                            
+    
+                            <p>Deixe seu WhatsApp:</p>
+    
+                            <form class="form-input">
+    
+                                <input type="tel" pattern="[0-9]{11}" name="Telefone" placeholder="Telefone" required/>
+    
+                            </form>
+    
+    
+    
+                            <p>Qual sua disponibilidade nesses dias?</p>
+    
+    
+    
+                            <table>
+    
+                                <tr>
+    
+                                    <th></th>
+    
+                                    <th>Manhã</th>
+    
+                                    <th>Tarde</th>
+    
+                                    <th>Noite</th>
+    
+                                </tr>
+    
+                                <tr>
+    
+                                    <td class="label" name="Segunda-feira">Segunda-Feira</td>
+    
+                                    <td class="check"><input type="checkbox" name="Segunda-Feira[]" value="Manhã"/>  </td>
+    
+                                    <td class="check"><input type="checkbox" name="Segunda-Feira[]" value="Tarde"/>  </td>
+    
+                                    <td class="check"><input type="checkbox" name="Segunda-Feira[]" value="Noite"/>  </td>                                
+    
+                                </tr>
+    
+    
+    
+                                <tr>
+    
+                                    <td class="label">Terça-Feira</td>
+    
+                                    <td class="check"><input type="checkbox" name="Terça-Feira[]" value="Manhã"/>  </td>
+    
+                                    <td class="check"><input type="checkbox" name="Terça-Feira[]" value="Tarde"/>  </td>
+    
+                                    <td class="check"><input type="checkbox" name="Terça-Feira[]" value="Noite"/>  </td>                                
+    
+                                </tr>
+    
+    
+    
+                                <tr>
+    
+                                    <td class="label">Quarta-Feira</td>
+    
+                                    <td class="check"><input type="checkbox" name="Quarta-Feira[]" value="Manhã"/>  </td>
+    
+                                    <td class="check"><input type="checkbox" name="Quarta-Feira[]" value="Tarde"/>  </td>
+    
+                                    <td class="check"><input type="checkbox" name="Quarta-Feira[]" value="Noite"/>  </td>                                
+    
+                                </tr>
+    
+    
+    
+                                <tr>
+    
+                                    <td class="label">Quinta-Feira</td>
+    
+                                    <td class="check"><input type="checkbox" name="Quinta-Feira[]" value="Manhã"/>  </td>
+    
+                                    <td class="check"><input type="checkbox" name="Quinta-Feira[]" value="Tarde"/>  </td>
+    
+                                    <td class="check"><input type="checkbox" name="Quinta-Feira[]" value="Noite"/>  </td>                                
+    
+                                </tr>
+    
+    
+    
+                                <tr>
+    
+                                    <td class="label">Sexta-Feira</td>
+    
+                                    <td class="check"><input type="checkbox" name="Sexta-Feira[]" value="Manhã"/>  </td>
+    
+                                    <td class="check"><input type="checkbox" name="Sexta-Feira[]" value="Tarde"/>  </td>
+    
+                                    <td class="check"><input type="checkbox" name="Sexta-Feira[]" value="Noite"/>  </td>                                
+    
+                                </tr>
+    
+    
+    
+                                <tr>
+    
+                                    <td class="label">Sábado</td>
+    
+                                    <td class="check"><input type="checkbox" name="Sabado[]" value="Manhã"/>  </td>
+    
+                                    <td class="check"><input type="checkbox" name="Sabado[]" value="Tarde"/>  </td>
+    
+                                    <td class="check"><input type="checkbox" name="Sabado[]" value="Noite"/>  </td>                                
+    
+                                </tr>
+    
+    
+    
+                                <tr>
+    
+                                    <td class="label">Domingo</td>
+    
+                                    <td class="check"><input type="checkbox" name="Domingo[]" value="Manhã"/>  </td>
+    
+                                    <td class="check"><input type="checkbox" name="Domingo[]" value="Tarde"/>  </td>
+    
+                                    <td class="check"><input type="checkbox" name="Domingo[]" value="Noite"/>  </td>                                
+    
+                                </tr>
+    
+                            </table>
+    
+    
+    
+                            
+    
+    
+    
+    
+    
+                            <p>Já teve experiência em trabalho voluntário?</p>
+    
+                            <fieldset class="check">
+    
+                                <input type="radio" name="Experiência Prévia" value="sim"><label>Sim</label><br>
+    
+                                <input type="radio" name="Experiência Prévia" value="nao"><label>Não</label><br>
+    
                             </fieldset>
-                        </form>
+    
+    
+    
+                            <p>Se sim, qual experiência?</p>
+    
+                            <form class="form-input">
+    
+                                <input type="text" name="Exemplo de Experiência Prévia">
+    
+                            </form>
+    
+                            
+    
+                            <p>Em quais áreas do nosso instituto você se identifica?</p>
+    
+                            
+    
+                            
+                                
+                                <fieldset class="check">
+    
+                                    <input type="checkbox" name="Áreas de Interesse[]" value="Trabalho de Rua"><label>Trabalho</label><br>
+    
+                                    <input type="checkbox" name="Áreas de Interesse[]" value="Design Gráfico"><label>Design Gráfico</label><br>
+    
+                                    <input type="checkbox" name="Áreas de Interesse[]" value="Fotografia/Videomaker"><label>Fotografia/Videomaker</label><br>
+    
+                                    <input type="checkbox" name="Áreas de Interesse[]" value="Psicologia"><label>Psicologia</label><br>
+    
+                                    <input type="checkbox" name="Áreas de Interesse[]" value="Pedagogia"><label>Pedagogia</label><br>
+    
+                                    <input type="checkbox" name="Áreas de Interesse[]" value="Administração e comunicação"><label>Administração e comunicação</label><br>
+    
+                                    <input type="checkbox" name="Áreas de Interesse[]" value="Assistência social"><label>Assistência social</label><br>
+    
+                                    <input type="checkbox" name="Áreas de Interesse[]" value="Professores"><label>Professores</label><br>
+    
+                                    <input type="checkbox" value="Outros"><label>Outros:<input type="text" id="other" name="Áreas de Interesse[]"></input></label><br>
+    
+                                </fieldset>
+                                
+    
+                            
+    
+                                
+                                <button type="submit" id="bsubmit" style="background-color: var(--secondary);
+                                border: none;
+                                color: white;
+                                padding: 2rem 2rem;
+                                text-align: right;
+                                text-decoration: none;
+                                display: block;
+                                font-size: 100%;
+                                font-weight: 600;
+                                border-radius: 1rem;
+                                float: left;
+                                box-shadow: -4px 5px 4px rgba(63, 32, 32, 0.25);
+                                
+                            
+                            
+                                width: 12rem;
+                                height: 2.5rem;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin-top: 3rem;">Enviar</button>
+                                
+    
+                        </h4>
 
-                    </h4>
+                        
+                        
+                        
+    
+    
+    
+                    
+    
+                    </div>        
+                </form>
 
-
-                </div>
-            </div>    
+            </div>
+             
+    
             
         
-            <img src="{% static 'img/forms-castelo.png' %}" alt="Castelo" />
+            <img src="{% static 'img/forms-castelo.png' %}" alt="Caminho nas nuvens para um castelo de sonhos" />
         </section>
+    </div>
         
 
 

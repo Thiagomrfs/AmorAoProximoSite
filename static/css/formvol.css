@@ -1,0 +1,153 @@
+#form-landing {
+    background-color: var(--background-one);
+    width: 100vw;
+    height: 300vh;
+    display: flex;
+}
+
+#form-landing .form-content {
+    display: flex;
+    width: 45%;
+    align-items: right ;
+    justify-content: center;
+    padding: 8rem;
+    width: 60vw;
+    
+    
+}
+
+#form-landing img {
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 90%;
+    max-width: 40vw;
+    height: auto;
+    
+    position: absolute;
+    top: 7rem;
+    bottom: 0;
+    right: 3rem;
+}
+
+#form-landing .form-body h1{
+    font-size: 3.5rem;
+    color: var(--secondary);
+    font-weight: bolder;
+}
+
+#form-landing .form-body h3{
+    margin-top: 0.7rem;
+    margin-bottom: 3.5rem;
+    font-size: 1rem;
+    color: var(--app-black);
+    font-weight: bolder;
+}
+
+#form-landing .form-body h4{
+    font-size: 1.5rem;
+    color: var(--app-black);
+    font-weight: bolder;
+    
+}
+
+#form-landing .form-body table{
+    width: 100%;
+}
+
+#form-landing .form-body th{
+    padding: 0.1rem;
+    font-size: 1.5rem;
+    font-weight: normal;
+    
+}
+
+#form-landing .form-body td{
+    padding: 0.1rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+#form-landing .form-body p{
+    
+    margin-top: 2rem;
+    margin-bottom: 0.3rem;
+}
+
+#form-landing .form-body fieldset{
+    border: 0rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+#form-landing .form-body input[type="text"], input[type="Email"], input[type=tel]{
+    width: 30vw;
+    padding: 00.3rem;
+    border-radius: 00.3rem;
+    box-shadow: 0 0 3px var(--text-gray);
+    border: 0rem;
+}
+
+#form-landing .form-body input[type="date"]{
+    width: 15vw;
+    padding: 00.3rem;
+    border-radius: 00.3rem;
+    box-shadow: 0 0 3px var(--text-gray);
+    border: 0rem;
+}
+
+#form-landing .form-body .check input[type="checkbox"] {
+    margin-bottom: 00.5rem;
+    cursor: pointer;
+    height: 1rem;
+    width: 1rem;
+  }
+
+#form-landing .form-body th{
+    padding: 0.1rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+#form-landing .form-body .label{
+    text-align: left;
+}
+
+#form-landing .form-body label{
+    font-size: 1.4rem;
+    margin-left: 00.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#other{
+    width: 15rem; 
+    margin-left: 0.5rem; 
+    border-top: 0rem;
+    border-left: 0rem;
+    border-right: 0rem;
+    border-bottom: solid;
+    background-color: transparent;
+    outline: none;
+}
+
+#form-landing .form-body input[type="submit"]{
+    background-color: var(--secondary);
+    border: none;
+    color: white;
+    padding: 2rem 2rem;
+    text-align: right;
+    text-decoration: none;
+    display: block;
+    font-size: 100%;
+    font-weight: 600;
+    border-radius: 1rem;
+    float: left;
+    box-shadow: -4px 5px 4px rgba(63, 32, 32, 0.25);
+    width: 12rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.2rem;
+
+}
