@@ -606,7 +606,7 @@
     text-align: center;
 }
 
-#volunteer .volunteer-container a {
+#volunteer .volunteer-container form {
     margin-top: 2.5rem;
     background: var(--secondary);
     align-self: center;
@@ -617,11 +617,18 @@
     justify-content: center;
     border-radius: 1.5rem;
 
-    font-size: 1.2rem;
     transition: 300ms;
     box-shadow: -4px 5px 4px rgba(0, 0, 0, 0.25);
 }
 
-#volunteer .volunteer-container a:hover {
+#volunteer .volunteer-container form>button {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#volunteer .volunteer-container form:hover {
     background: var(--secondary-hover);
+    cursor: pointer;
 }

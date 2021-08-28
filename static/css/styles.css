@@ -29,6 +29,7 @@
 
 body {
     overflow-y: overlay;
+    background: var(--background-one);
 }
 
 li, a, button {
