@@ -1,3 +1,4 @@
+from infographic.models import Infographic
 from django import template
 from django.http.response import HttpResponse
 from django.template import loader
@@ -13,13 +14,15 @@ def index(request):
     culture = Action.objects.filter(category='CLT')
     food = Action.objects.filter(category='CNM')
     updates = Update.objects.order_by('-data')
+    inf_price = Infographic.objects.get(pk=1)
     
     context = {
         "education": education,
         "sports": sports,
         "culture": culture,
         "food": food,
-        "updates": updates[:5]
+        "updates": updates[:5],
+        "inf_price": inf_price.price
     }
 
     return HttpResponse(template.render(context, request))

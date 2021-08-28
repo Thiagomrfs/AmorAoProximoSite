@@ -6,9 +6,8 @@ function updateInfographic() {
     }
 
     let desc = document.querySelector("#inf-description");
-    let totalPrice = 30;
 
-    let percentage = 100*value / totalPrice;
+    let percentage = 100*value / Number.parseFloat(price);
 
     if (percentage > 100) percentage = 100;
 
