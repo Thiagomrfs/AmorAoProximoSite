@@ -1,5 +1,5 @@
 core/secretKey.txt
-/media/*
+# /media/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
