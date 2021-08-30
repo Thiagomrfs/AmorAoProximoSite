@@ -57,7 +57,7 @@ Os requisitos funcionais para a aplicação são:
 a disposição dos requisitos no projeto é a seguinte:
 
 #### 3.1. RF0001: Interação com o infográfico. 
-A partir do valor de doação colocado, o infográfico demonstra a porcentagem ou quantidade do impacto de uma doação.
+O usuário coloca uma valor na área de input e, com isso, recebe o retorno visual, em porcentagem ou quantidade, do quanto a doação que ele fez impactou o instituto Amor ao Próximo.
 
 #### 3.2. RF0002: Cadastro de ações
 Com o auxílio da área do administrador provida pelo framework Django, o administrador do sistema pode cadastrar ações. É apenas necessário que ele forneça as informações sobre a ação a ser realizada.
