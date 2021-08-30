@@ -6,7 +6,8 @@ Uma aplicação web desenvolvida para a instituição Amor ao Próximo durante a
 ## Tabela de items
     1. Equipe - C-J3T  
     2. Sobre a aplicação
-    3. Requisitos funcionais 
+    3. Requisitos funcionais
+        3.1  RF0001: Interação com o infográfico
         3.1. RF0002: Cadastro de ações 
         3.2. RF0003: Remoção e edição de ações 
         3.3. RF0004: Postagem de Atualizações
@@ -39,21 +40,25 @@ Além do infográfico, haverá uma sessão com um pouco da história da institui
 ## 3. Requisitos funcionais
 Os requisitos funcionais para a aplicação são:
 
-> RF0001: Cadastro de ações. Como líder (administrador), posso acessar a área de administração de ações, fornecer informações sobre a ação e cadastrá-la no sistema para que a ação possa ser visualizada pelos usuários.
+> RF0001: Interação com o infográfico. Como usuário, posso interagir com o infográfico colocando o valor que quero doar e visualizando em porcentagem ou quantidade o impacto da minha doação.
 
-> RF0002: Remoção e edição de ações. Como líder (administrador), posso acessar a área de administração de ações, editá-la e/ou finalizar as atividades para aquela ação de modo que ela não apareça mais no catálogo.
+> RF0002: Cadastro de ações. Como líder (administrador), posso acessar a área de administração de ações, fornecer informações sobre a ação e cadastrá-la no sistema para que a ação possa ser visualizada pelos usuários.
 
-> RF0003: Postar Atualizações. Como líder (administrador), posso fornecer atualizações sobre o andamento das ações criando atualizações que serão dispostas no site para que os interessados possam acompanhar o andamento das ações sendo desenvolvidas.
+> RF0003: Remoção e edição de ações. Como líder (administrador), posso acessar a área de administração de ações, editá-la e/ou finalizar as atividades para aquela ação de modo que ela não apareça mais no catálogo.
 
-> RF0004: Visualização das ações. Como beneficiário (usuário), posso escolher uma ação e ver detalhes sobre para que eu decida se irei me cadastrar.
+> RF0004: Postar Atualizações. Como líder (administrador), posso fornecer atualizações sobre o andamento das ações criando atualizações que serão dispostas no site para que os interessados possam acompanhar o andamento das ações sendo desenvolvidas.
 
-> RF0005: Cadastro nas ações. Como beneficiário (usuário), posso acessar a lista de ações, escolher uma ação que me interesse, ver detalhes sobre ela, e, caso me interesse, fornecer alguns dados de identificação e me cadastrar na ação para que eu possa participar da ação.
+> RF0005: Visualização das ações. Como beneficiário (usuário), posso escolher uma ação e ver detalhes sobre para que eu decida se irei me cadastrar.
 
-> RF0006: Voluntariado. Como usuário, posso acessar a lista de ações, escolher uma ação que me interesse, ver detalhes sobre ela, e, caso me interesse, fornecer meus dados e me voluntariar para auxiliar a ação.
+> RF0006: Cadastro nas ações. Como beneficiário (usuário), posso acessar a lista de ações, escolher uma ação que me interesse, ver detalhes sobre ela, e, caso me interesse, fornecer alguns dados de identificação e me cadastrar na ação para que eu possa participar da ação.
+
+> RF0007: Voluntariado. Como usuário, posso acessar a lista de ações, escolher uma ação que me interesse, ver detalhes sobre ela, e, caso me interesse, fornecer meus dados e me voluntariar para auxiliar a ação.
 
 a disposição dos requisitos no projeto é a seguinte:
 
-#### 3.1. RF0001: Cadastro de ações
+#### 3.1. RF0001: Interação com o infográfico. Como usuário, posso interagir com o infográfico colocando o valor que quero doar e visualizando em porcentagem ou quantidade o impacto da minha doação.
+
+#### 3.2. RF0002: Cadastro de ações
 Com o auxílio da área do administrador provida pelo framework Django, o administrador do sistema pode cadastrar ações. É apenas necessário que ele forneça as informações sobre a ação a ser realizada.
 
 ##### Arquivos relacionados:
@@ -74,7 +79,7 @@ Com o auxílio da área do administrador provida pelo framework Django, o admini
 
     /static/js/actionsList.js : código para a criação e atualização do slider para a disposição dos cards para cada ação.
 
-#### 3.2. RF0002: Remoção e edição de ações
+#### 3.3. RF0003: Remoção e edição de ações
 Com o auxílio da área do administrador provida pelo framework Django, o administrador do sistema pode realizar alterações nas ações, assim como deletá-las.
 
 ##### Arquivos relacionados:
@@ -85,7 +90,7 @@ Com o auxílio da área do administrador provida pelo framework Django, o admini
 
     /actions/models.py : model relacionado ao objeto ação, é o que dá a forma ao banco de dados (tendo em mente que estamos tratando o esquema Model-View-Template).
 
-#### 3.3. RF0003: Postar Atualizações
+#### 3.4. RF0004: Postar Atualizações
 Com o auxílio da área do administrador provida pelo framework Django, o administrador do sistema pode postar atualizões sobre ONG para que elas sejam dispostas na página inicial da aplicação.
 
 ##### Arquivos relacionados:
@@ -103,7 +108,7 @@ Com o auxílio da área do administrador provida pelo framework Django, o admini
     /static/css/main/sections.css : arquivo de estilização da página inicial. As estilizações para os updates estão sob o id #updates.
 
 
-#### 3.4. RF0004: Visualização das ações
+#### 3.5. RF0005: Visualização das ações
 Após uma ação ser criada, os usuários podem adquirir mais informações sobre as mesmas ao clicar no card que à representa, cards esses divididos nas sub-categorias: Educação, Cultura, Esporte e Comida na Mesa, após o clique, um modal aparecerá contendo as informações: Título, Data de Início, data de Finalização, Descrição, Instrutor(a) e Requisitos, essas infrmações são providas por meio da área de administrador promovida pelo framework Django
 
 ##### Arquivos relacionados:
@@ -114,10 +119,10 @@ Após uma ação ser criada, os usuários podem adquirir mais informações sobr
 
     /static/css/modal.css : arquivo de estilização do modal
 
-#### 3.5. RF0005: Cadastro nas ações
+#### 3.6. RF0006: Cadastro nas ações
 > ainda não implementado
 
-#### 3.6. RF0006: Voluntariado
+#### 3.7. RF0007: Voluntariado
 > ainda não implementado
 
 ## 4. Como instalar
