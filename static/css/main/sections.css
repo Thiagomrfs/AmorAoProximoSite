@@ -58,25 +58,42 @@
 
 #history {
     
-    width: 100vw;
+    width: 300vw;
     height: 100vh;
     display: flex;
-    
+    overflow-x: hidden;
     scroll-snap-type: x mandatory; 
     padding-top: 1.5rem;
     -webkit-overflow-scrolling: x mandatory;
+    transition: 300ms;
 }
 
 
+.cont {
+    display: flex;
+    width: 300vw;
+    overflow-x: hidden;
+    transition: 300ms;
+}
 
-#history .history-left {
+.quadro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.q1 .history-left {
     width: 55vw;
-    height: 100%;
+    height: 95%;
     display: inline-block;
     flex-direction: column;
+    
 }
 
-#history .history-left h3 {
+.q1 .history-left h3 {
     flex: 1;
     color: var(--text-black);
     font-weight: bold;
@@ -86,20 +103,21 @@
     margin-left: var(--section-left-margin);
 }
 
-#history .history-left img {
+.q1 .history-left img {
     max-width: 95%;
     height: 90%;
     justify-self: flex-end;
 }
 
-#history .history-right {
+.q1 .history-right {
     flex:1;
+    width: 45vw;
     height: 100%;
     padding: 2rem;
     display: inline-block;
 }
 
-#history .history-right h4 {
+.q1 .history-right h4 {
     color: var(--text-black);
     font-size: 1.4rem;
     font-weight: bold;
@@ -107,9 +125,167 @@
     margin-bottom: 1.2rem;
 }
 
-#history .history-right p {
+.q1 .history-right p {
     width: 85%;
 }
+
+.q2{
+    width: 100vw;
+}
+
+
+
+.q2 .image1 h3{
+    flex: 1;
+    color: var(--text-black);
+    font-weight: bold;
+    font-size: 2rem;
+    justify-self: center;
+    margin-top: 2rem;
+    margin-left: var(--section-left-margin);
+}
+
+.q2 .card-image1{
+    background-color: var(--background-one);
+    border-radius: 0.8rem;
+    width: 18rem;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 1.6rem;
+    margin-left: 3rem;
+    
+}
+
+.q2 .card-image1 p, h5{
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.q2 .image2{
+    margin-top: 0rem;
+}
+
+.q2 .card-image2{
+    background-color: var(--background-one);
+    border-radius: 0.8rem;
+    width: 20rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    padding-left: 2;
+}
+.q2 .card-image2 img{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.q2 .image3{
+    flex: 1;
+    color: var(--text-black);
+    font-weight: bold;
+    font-size: 1rem;
+    justify-self: center;
+    margin-top: -2rem;
+}
+
+.q2 .card-image3{
+    background-color: var(--background-one);
+    border-radius: 0.8rem;
+    width: 25rem;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.q2 .card-image3 img{
+    margin-bottom: 1rem;
+    
+}
+
+.q3{
+    width: 100vw;
+}
+
+.q3 .image4 h3{
+    flex: 1;
+    color: var(--text-black);
+    font-weight: bold;
+    font-size: 2rem;
+    justify-self: center;
+    margin-top: -3rem;
+    margin-left: var(--section-left-margin);
+    margin-bottom: 1rem;
+}
+
+.q3 .card-image4{
+    background-color: var(--background-one);
+    border-radius: 0.8rem;
+    width: 18rem;
+    height: 29rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-left: 3rem;
+    
+}
+
+.q3 .card-image4 p, h5{
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.q3 .image5{
+    margin-top: 0;
+}
+
+.q3 .card-image5{
+    background-color: var(--background-one);
+    border-radius: 0.8rem;
+    width: 27rem;
+    height: 22rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+
+}
+
+.q3 .card-image5 img{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.q3 .image6{
+    flex: 1;
+    color: var(--text-black);
+    font-weight: bold;
+    font-size: 1rem;
+    justify-self: center;
+    margin-top: 1rem;
+}
+
+.q3 .card-image6{
+    background-color: var(--background-one);
+    border-radius: 0.8rem;
+    width: 20rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.q3 .card-image6 img{
+    margin-bottom: 1rem;
+    
+}
+
 
 #donations {
     background-color: var(--background-one);
