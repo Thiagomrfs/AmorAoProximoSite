@@ -57,7 +57,19 @@ Os requisitos funcionais para a aplicação são:
 a disposição dos requisitos no projeto é a seguinte:
 
 #### 3.1. RF0001: Interação com o infográfico. 
-O usuário coloca uma valor na área de input e, com isso, recebe o retorno visual, em porcentagem ou quantidade, do quanto a doação que ele fez impactou o instituto Amor ao Próximo.
+O usuário coloca uma valor na área de input e, com isso, recebe o retorno visual, em porcentagem ou quantidade, do quanto a doação que ele fez impactou o instituto Amor ao Próximo. O retorno se dá com o preenchimento da cesta básica, que estava antes vazia, de acordo com o valor fornecido. Por exemplo: supondo que uma cesta básica custa 30 reais e o usuário forneça 15 reais, nesse caso o infográfico será preenchido em 50%.
+
+##### Arquivos relacionados:
+
+    localhost:8000/admin : ambiente de administrador do Django.
+
+    /static/img/infographic : pasta contendo as ilustrações
+    
+    /infographic/models.py : model relacionado ao objeto infográfico, é o que dá a forma ao banco de dados (tendo em mente que estamos tratando o esquema Model-View-Template). Nesse caso o utilizamos apenas para definir o valor total do infográfico.
+
+    /static/css/main/sections.css : arquivo de estilização da página inicial. As estilizações para o infográfico estão sob o id #donations.
+
+    /static/js/infographic.js : lógica para a operação de preenchimento do infográfico.
 
 #### 3.2. RF0002: Cadastro de ações
 Com o auxílio da área do administrador provida pelo framework Django, o administrador do sistema pode cadastrar ações. É apenas necessário que ele forneça as informações sobre a ação a ser realizada.
