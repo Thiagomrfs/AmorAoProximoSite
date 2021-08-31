@@ -121,10 +121,32 @@ Após uma ação ser criada, os usuários podem adquirir mais informações sobr
     /static/css/modal.css : arquivo de estilização do modal
 
 #### 3.6. RF0006: Cadastro nas ações
-> ainda não implementado
+Após acessar o modal com a ação, o usuário poderá clicar no botão "Matricular-se", então será levado para uma nova página com o formulário de inscrição para as ações, nele o usuário informará: Nome Completo, Data de nascimento, telefone, bairro de residência, além da opção de apresentar informações adicionais. Ao submeter o formulário, utilizando-se da aplicação FormSubmit, as informações serão enviadas ao email do Instituto.
+
+##### Arquivos relacionados
+
+    /templates/formact.html : template para a criação da página que contém o forulário a ser preenchido
+
+    /static/css/formact.css : arquivo de estilização da página de cadastro nas ações
+
+    /template/feedback.html : template para a criação da página que contém o feedback após o preenchimeto do formulário
+
+    /static/css/feedback.css : arquivo de estilização da página de feedback
+
+
 
 #### 3.7. RF0007: Voluntariado
-> ainda não implementado
+Ao clicar no botão "Quero me voluntariar!", o usuário será levado para uma nova página com o formulário de inscrição para o voluntáriado, nele o usuário informará: Nome Completo, Data de nascimento, telefone, bairro de residência, endereço de email, como conheceu o instituto, número de Whatsapp, disponibilidade nos dias da semana, se já teve experiência com trabalho voluntário e, se sim, qual e qual áreas do instituto o usuário se identifica. Ao submeter o formulário, utilizando-se da aplicação FormSubmit, as informações serão enviadas ao email do Instituto.
+
+##### Arquivos relacionados
+
+    /templates/formvol.html : template para a criação da página que contém o forulário a ser preenchido
+
+    /static/css/formvol.css : arquivo de estilização da página de cadastro de voluntários
+
+    /template/feedback.html : template para a criação da página que contém o feedback após o preenchimeto do formulário
+
+    /static/css/feedback.css : arquivo de estilização da página de feedback
 
 ## 4. Como instalar
 
