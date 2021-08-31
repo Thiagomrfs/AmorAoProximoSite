@@ -126,7 +126,7 @@ Após uma ação ser criada, os usuários podem adquirir mais informações sobr
 
 ##### Arquivos relacionados:
 
-    localhost/8000/admin: ambiente de administrador do Django
+    localhost:8000/admin: ambiente de administrador do Django
 
     /static/js/modal.js : função que executa o modal
 
