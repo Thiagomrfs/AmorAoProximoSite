@@ -22,20 +22,20 @@
 
 <body>
     <header id="nav">
-        <div id="logo-container">
-            <img src="{% static 'img/Logo.svg' %}" 
-            alt="logo amor ao próximo" class="logo"
-            width="82" height="64">
-        </div>
+            <a href="/" id="logo-container">
+                <img src="{% static 'img/Logo.svg' %}" 
+                alt="logo amor ao próximo" class="logo"
+                width="82" height="64">
+            </a>
         <nav>
             <ul class="nav-items">
-                <li><a href="#history">História</a></li>
-                <li><a href="#actions">Ações</a></li>
-                <li><a href="#updates">Novidades</a></li>
-                <li><a href="#volunteer">Seja voluntário</a></li>
+                <li><a href="/#history">História</a></li>
+                <li><a href="/#actions">Ações</a></li>
+                <li><a href="/#updates">Novidades</a></li>
+                <li><a href="/#volunteer">Seja voluntário</a></li>
             </ul>
         </nav>
-        <a href="#donations" id="nav-doe">
+        <a href="/#donations" id="nav-doe">
             Doar!
         </a>
     </header>
@@ -46,6 +46,26 @@
     </main>
 
     <footer>
+        <div class="footer-content">
+            <div class="ong-info">
+                <div class="ong-info-left">
+                    <p>Telefone: +55 (85) 9834-4615</p>
+                    <p>Instagram: @Oficialamoraoproximo</p>
+                    <p>E-mail: ofamoraoproximo@gmail.com</p>
+                    <p>Endereço: Rua professora Maria Clara 2243 - Vila Velha</p>
+                </div>
+    
+                <div class="ong-info-right">
+                    <p>Pix: ofamoraoproximo@gmail.com</p>
+                    <p>Natan Henrique Paz Freire</p>
+                    <p>Bradesco</p>
+                </div>
+            </div>
+            <div class="cj3t-container">
+                <img src="{% static 'img/cj3t_logo.svg' %}" alt="logo da equipe CJ3T">
+                <p>Aplicação desenvolvida pela equipe C-J3T</p>
+            </div>
+        </div>
         <img src="{% static 'img/footer-background.svg' %}" alt="plano de fundo do footer">
     </footer>
 

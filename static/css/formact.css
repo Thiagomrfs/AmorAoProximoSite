@@ -56,7 +56,7 @@
     border: 0rem;
 }
 
-#form-landing .form-body input[type="submit"]{
+#form-landing .form-body button {
     background-color: var(--secondary);
     border: none;
     color: white;
@@ -64,8 +64,8 @@
     text-align: right;
     text-decoration: none;
     display: block;
-    font-size: 100%;
-    font-weight: 600;
+    font-size: 1.3rem;
+    font-weight: 400;
     border-radius: 1rem;
     float: left;
     box-shadow: -4px 5px 4px rgba(63, 32, 32, 0.25);
@@ -74,6 +74,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 1.2rem;
+    margin-top: 1.3rem;
+    transition: 300ms;
+}
 
+#form-landing .form-body button:hover {
+    background: var(--secondary-hover);
+    cursor: pointer;
 }

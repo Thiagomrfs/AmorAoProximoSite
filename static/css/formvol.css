@@ -1,8 +1,8 @@
 #form-landing {
     background-color: var(--background-one);
     width: 100vw;
-    height: 300vh;
     display: flex;
+    margin-bottom: 3.5rem;
 }
 
 #form-landing .form-content {
@@ -12,8 +12,6 @@
     justify-content: center;
     padding: 8rem;
     width: 60vw;
-    
-    
 }
 
 #form-landing img {
@@ -130,7 +128,7 @@
     outline: none;
 }
 
-#form-landing .form-body input[type="submit"]{
+#form-landing .form-body button{
     background-color: var(--secondary);
     border: none;
     color: white;
@@ -139,7 +137,7 @@
     text-decoration: none;
     display: block;
     font-size: 100%;
-    font-weight: 600;
+    font-weight: 400;
     border-radius: 1rem;
     float: left;
     box-shadow: -4px 5px 4px rgba(63, 32, 32, 0.25);
@@ -148,6 +146,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 1.2rem;
+    margin-top: 2rem;
+    transition: 300ms;
+}
 
+#form-landing #bsubmit:hover {
+    background: var(--secondary-hover);
+    cursor: pointer;
 }

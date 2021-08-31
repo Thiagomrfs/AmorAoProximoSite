@@ -211,13 +211,53 @@
                 </div>
                 <div class="inf-right">
                     <div class="inf-cont">
-                        <img src="{% static 'img/infographic/info_emptya.png' %}" alt="infográfico vazio" id="inf-emp">
-                        <img src="{% static 'img/infographic/info_fulla.png' %}" alt="infográfico cheio" id="inf-full">
+                        <img src="{% static 'img/infographic/info_emptyb.png' %}" alt="infográfico vazio" id="inf-emp">
+                        <img src="{% static 'img/infographic/info_fullb.png' %}" alt="infográfico cheio" id="inf-full">
                     </div>
+                    <div id="inf-description"></div>
                 </div>
             </div>    
             <div class="ong-infos">
-
+                <h2>Formas de doação rápidas</h2>
+                <div class="fast-donations">
+                    <div class="pix-donation">
+                        <img src="{% static 'img/qrcodes/pix.png' %}" alt="pix qrcode">
+                        <h4>Pix:</h4>
+                        <p>ofamoraoproximo@gmail.com</p>
+                    </div>
+                    <div class="picpay-donation">
+                        <img src="{% static 'img/qrcodes/pix.png' %}" alt="pix qrcode">
+                        <h4>PicPay doação única:</h4>
+                        <p>Abra o PicPay em seu telefone e escaneie o código abaixo ou procure pelo nome:</p>
+                        <span>@exemploamoraoprox</span>
+                    </div>
+                </div>
+                <h2>Outras formas de doação</h2>
+                <div class="other-donations">
+                    <div class="bank-info">
+                        <div class="info-bradesco">
+                            <h3>Bradesco</h3>
+                            <p>Agencia: 3456</p>
+                            <p>Conta: 83595-1</p>
+                            <p>Código do banco: 237</p>
+                        </div>
+                        <div class="info-nubank">
+                            <h3>Nubank</h3>
+                            <p>Agencia: 0001</p>
+                            <p>Conta: 4320619-4</p>
+                            <p>Código do banco: 260</p>
+                        </div>
+                        <div class="info-picpay">
+                            <h3>PicPay</h3>
+                            <p>Agencia: 0001</p>
+                            <p>Conta: 24443084-5</p>
+                            <p>Código do banco: 380</p>
+                        </div>
+                    </div>
+                    <div class="phys-donations">
+                        <p><b>Físico:</b> Em nossa sede social, localizada no endereço<br/> Rua professora Maria Clara 2243)</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="actions">
@@ -434,10 +474,12 @@
             <div class="updates-container">
                 {% for update in updates %}
                 <div class="update-card">
+                    <div class="update-img">
+                        <img src="{{ update.imagem.url }}" alt="Update">
+                    </div>
                     <div class="update-title">
                         <p>{{update.titulo}}</p>
                     </div>
-                    <img src="{{ update.imagem.url }}" alt="Update">
                 </div>
                 {% endfor %}
             </div>
@@ -452,43 +494,51 @@
                 </p>
                 <p>Todos são importantes quando o objetivo é dar Amor ao Próximo!</p>
             </div>
-            <div class="volunteer-call">
+            <div class="volunteer-container">
                 <div class="volunteer-profiles">
-                    <div class="volunteer-card">
-                        <img src="{% static 'img/volunteer_icons/trabalhoDeRua.svg' %}" alt="icone trabalho de rua">
-                        <p>Trabalho de rua</p>
+                    <div class="profile-container">
+                        <div class="volunteer-card">
+                            <img src="{% static 'img/volunteer_icons/trabalhoDeRua.svg' %}" alt="icone trabalho de rua">
+                            <p>Trabalho de rua</p>
+                        </div>
+                        <div class="volunteer-card">
+                            <img src="{% static 'img/volunteer_icons/pedagogia.svg' %}" alt="icone pedagogia">
+                            <p>Pedagogos</p>
+                        </div>
                     </div>
-                    <div class="volunteer-card">
-                        <img src="{% static 'img/volunteer_icons/designGrafico.svg' %}" alt="icone design gráfico">
-                        <p>Design gráfico</p>
+                    <div class="profile-container">
+                        <div class="volunteer-card">
+                            <img src="{% static 'img/volunteer_icons/designGrafico.svg' %}" alt="icone design gráfico">
+                            <p>Design gráfico</p>
+                        </div>
+                        <div class="volunteer-card">
+                            <img src="{% static 'img/volunteer_icons/administração.svg' %}" alt="icone administração">
+                            <p>Aministração e comunicação</p>
+                        </div>
                     </div>
-                    <div class="volunteer-card">
-                        <img src="{% static 'img/volunteer_icons/videomaker.svg' %}" alt="icone fotografia e videomaking">
-                        <p>Fotografia/Videomaking</p>
+                    <div class="profile-container">
+                        <div class="volunteer-card">
+                            <img src="{% static 'img/volunteer_icons/videomaker.svg' %}" alt="icone fotografia e videomaking">
+                            <p>Fotografia/Videomaking</p>
+                        </div>
+                        <div class="volunteer-card">
+                            <img src="{% static 'img/volunteer_icons/assistência.svg' %}" alt="icone trabalho de rua">
+                            <p>Assistência social</p>
+                        </div>
                     </div>
-                    <div class="volunteer-card">
-                        <img src="{% static 'img/volunteer_icons/psicologia.svg' %}" alt="icone psicologia">
-                        <p>Psicologia</p>
-                    </div>
-                    <div class="volunteer-card">
-                        <img src="{% static 'img/volunteer_icons/pedagogia.svg' %}" alt="icone pedagogia">
-                        <p>Pedagogos</p>
-                    </div>
-                    <div class="volunteer-card">
-                        <img src="{% static 'img/volunteer_icons/administração.svg' %}" alt="icone administração">
-                        <p>Aministração e comunicação</p>
-                    </div>
-                    <div class="volunteer-card">
-                        <img src="{% static 'img/volunteer_icons/assistência.svg' %}" alt="icone trabalho de rua">
-                        <p>Assistência social</p>
-                    </div>
-                    <div class="volunteer-card">
-                        <img src="{% static 'img/volunteer_icons/educação.svg' %}" alt="icone trabalho de rua">
-                        <p>Educação</p>
+                    <div class="profile-container">
+                        <div class="volunteer-card">
+                            <img src="{% static 'img/volunteer_icons/psicologia.svg' %}" alt="icone psicologia">
+                            <p>Psicologia</p>
+                        </div>
+                        <div class="volunteer-card">
+                            <img src="{% static 'img/volunteer_icons/educação.svg' %}" alt="icone trabalho de rua">
+                            <p>Educação</p>
+                        </div>
                     </div>
                 </div>
                 <form action="/formvol">
-                <button>Quero me voluntariar!</button>
+                    <button>Quero me voluntariar!</button>
                 </form>
             </div>
         </section>
@@ -497,6 +547,7 @@
 
 {% block scripts %}
 <script src= {% static "js/modal.js" %}> </script>
+<script>var price = '{{inf_price}}'</script>
 <script src= {% static "js/infographic.js" %}> </script>
 <script src= {% static "js/history.js" %}> </script>
 {% endblock scripts %}
