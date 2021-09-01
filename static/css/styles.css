@@ -29,6 +29,8 @@
 
 body {
     overflow-y: overlay;
+    overflow-x: hidden;
+    width: 100vw;
     background: var(--background-one);
 }
 

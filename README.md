@@ -6,14 +6,14 @@ Uma aplicação web desenvolvida para a instituição Amor ao Próximo durante a
 ## Tabela de items
     1. Equipe - C-J3T  
     2. Sobre a aplicação
-    3. Requisitos funcionais 
-        3.1. RF0001: Realizar pagamento  
-        3.2. RF0002: Cadastro de ações 
-        3.3. RF0003: Remoção e edição de ações 
-        3.4. RF0004: Postagem de Atualizações
-        3.5. RF0005: Visualização das ações
-        3.6. RF0006: Cadastro nas ações
-        3.7. RF0007: Voluntariado
+    3. Requisitos funcionais
+        3.1  RF0001: Interação com o infográfico
+        3.1. RF0002: Cadastro de ações 
+        3.2. RF0003: Remoção e edição de ações 
+        3.3. RF0004: Postagem de Atualizações
+        3.4. RF0005: Visualização das ações
+        3.5. RF0006: Cadastro nas ações
+        3.6. RF0007: Voluntariado
     4. Como instalar
         3.1. Dependências
         3.2. Como iniciar o servidor
@@ -21,10 +21,10 @@ Uma aplicação web desenvolvida para a instituição Amor ao Próximo durante a
 
 ## 1. Equipe - C-J3T
 - Caio Vinicius
-- Thiago Marinho
+- Jeremias Oliveira
 - João Lucas
 - Júlio César Luz
-- Jeremias Oliveira
+- Thiago Marinho
 
 ## 2. Sobre a aplicação
 Essa é uma aplicação web desenvolvida durante a disciplina de Projeto Integrado I, componente curricular do terceiro semestre do curso de Sistemas e Mídias Digitais da Universidade Federal do Ceará. 
@@ -39,9 +39,9 @@ Além do infográfico, haverá uma sessão com um pouco da história da institui
 
 ## 3. Requisitos funcionais
 Os requisitos funcionais para a aplicação são:
-    
-> RF0001: Realizar pagamento. Como doador (usuário), posso acessar a área de doação, optativamente posso interagir com o infográfico, preencher meus dados ou selecionar outra forma de pagamento para realizar a doação.
-    
+
+> RF0001: Interação com o infográfico. Como usuário, posso interagir com o infográfico colocando o valor que quero doar e visualizando em porcentagem ou quantidade o impacto da minha doação.
+
 > RF0002: Cadastro de ações. Como líder (administrador), posso acessar a área de administração de ações, fornecer informações sobre a ação e cadastrá-la no sistema para que a ação possa ser visualizada pelos usuários.
 
 > RF0003: Remoção e edição de ações. Como líder (administrador), posso acessar a área de administração de ações, editá-la e/ou finalizar as atividades para aquela ação de modo que ela não apareça mais no catálogo.
@@ -56,8 +56,20 @@ Os requisitos funcionais para a aplicação são:
 
 a disposição dos requisitos no projeto é a seguinte:
 
-#### 3.1. RF0001: Realizar pagamento
-> ainda não implementado
+#### 3.1. RF0001: Interação com o infográfico. 
+O usuário coloca uma valor na área de input e, com isso, recebe o retorno visual, em porcentagem ou quantidade, do quanto a doação que ele fez impactou o instituto Amor ao Próximo. O retorno se dá com o preenchimento da cesta básica, que estava antes vazia, de acordo com o valor fornecido. Por exemplo: supondo que uma cesta básica custa 30 reais e o usuário forneça 15 reais, nesse caso o infográfico será preenchido em 50%.
+
+##### Arquivos relacionados:
+
+    localhost:8000/admin : ambiente de administrador do Django.
+
+    /static/img/infographic : pasta contendo as ilustrações
+    
+    /infographic/models.py : model relacionado ao objeto infográfico, é o que dá a forma ao banco de dados (tendo em mente que estamos tratando o esquema Model-View-Template). Nesse caso o utilizamos apenas para definir o valor total do infográfico.
+
+    /static/css/main/sections.css : arquivo de estilização da página inicial. As estilizações para o infográfico estão sob o id #donations.
+
+    /static/js/infographic.js : lógica para a operação de preenchimento do infográfico.
 
 #### 3.2. RF0002: Cadastro de ações
 Com o auxílio da área do administrador provida pelo framework Django, o administrador do sistema pode cadastrar ações. É apenas necessário que ele forneça as informações sobre a ação a ser realizada.
@@ -114,7 +126,7 @@ Após uma ação ser criada, os usuários podem adquirir mais informações sobr
 
 ##### Arquivos relacionados:
 
-    localhost/8000/admin: ambiente de administrador do Django
+    localhost:8000/admin: ambiente de administrador do Django
 
     /static/js/modal.js : função que executa o modal
 

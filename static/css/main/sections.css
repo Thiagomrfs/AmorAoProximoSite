@@ -57,11 +57,11 @@
 }
 
 #history {
-    
+    background: var(--background-two);
     width: 300vw;
     height: 100vh;
     display: flex;
-    overflow-x: hidden;
+    overflow: hidden;
     scroll-snap-type: x mandatory; 
     padding-top: 1.5rem;
     -webkit-overflow-scrolling: x mandatory;
@@ -72,21 +72,29 @@
 .cont {
     display: flex;
     width: 300vw;
-    overflow-x: hidden;
+    overflow: hidden;
     transition: 300ms;
 }
 
 .quadro {
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
     height: 100vh;
+}
 
+.quadro .prev {
+    margin-left: 2rem;
+}
+
+.quadro .next {
+    margin-right: 2rem;
 }
 
 .q1 .history-left {
-    width: 55vw;
+    width: 50vw;
     height: 95%;
     display: inline-block;
     flex-direction: column;
@@ -115,6 +123,7 @@
     height: 100%;
     padding: 2rem;
     display: inline-block;
+    margin-bottom: 3rem;
 }
 
 .q1 .history-right h4 {
@@ -131,9 +140,8 @@
 
 .q2{
     width: 100vw;
+    padding-bottom: 2rem;
 }
-
-
 
 .q2 .image1 h3{
     flex: 1;
@@ -149,7 +157,7 @@
     background-color: var(--background-one);
     border-radius: 0.8rem;
     width: 18rem;
-    height: 35rem;
+    height: 30rem;
     display: flex;
     flex-direction: column;
     padding: 1rem;
