@@ -211,3 +211,6 @@ Finalmente, para iniciar o servidor, digite:
 > python3 manage.py runserver
 
 Após isso você poderá acessar a aplicação no endereço *localhost:8000*.
+
+
+*Copyright* C-J3T - Todos os direitos reservados. Código sob licença[Gnu Public License version 3.0.](https://www.gnu.org/licenses/gpl-3.0.txt)
