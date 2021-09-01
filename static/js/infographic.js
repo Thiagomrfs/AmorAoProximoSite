@@ -38,7 +38,7 @@ function updateInfographic() {
         </div>
         <div class="inf-support-text">
             <p>
-                de uma cesta básica poderão ser arrecadados com a sua doação. De pouquinho em pouquinho fazemos a diferença!
+                de uma cesta básica poderá ser arrecadada com a sua doação. De pouquinho em pouquinho fazemos a diferença!
             </p>
         </div>
         `
